@@ -1,9 +1,26 @@
 
-<p>
-<%= @product.title %>
-<%= @product.brand %>
-<%= image_tag "#{@product.image_url}" %>
-</p>
+<div class="container">
+  <h2>Produit recherché :</h2>
+    <div class="product-card d-flex">
+      <%= image_tag "#{@product.image_url}" %>
+      <div class="product-details">
+        <h3><%= @product.title %></h3>
+        <p><%= @product.brand %></p>
+      </div>
+    </div>
 
+  <h2>Consignes de tri :</h2>
+    <div class="sorting-card">
+    </div>
 
-
+  <h2>Options :</h2>
+    <div class="add-favorites">
+      <% @product.searches.each do |search| %>
+        <% if search.favorite %>
+          <p><%= link_to "<i class='fas fa-star' style='color:#FECB1D;'></i>".html_safe, search_path(search), method: :patch, remote: true %>Favori</p>
+        <% else %>
+          <p><%= link_to "<i class='fas fa-star'></i>".html_safe, search_path(search), method: :patch, remote: true %>Ajouter aux favoris</p>
+        <% end %>
+      <% end %>
+    </div>
+</div>
