@@ -1,6 +1,6 @@
 
-favorite = document.querySelector(".fas fa-star")
-console.log(favorite);
+const favorite = document.getElementById("star");
+favorite.classList.toggle("btn-favorites");
 
 // function refreshForm(innerHTML) {
 //   const newReviewForm = document.getElementById('new_review');
@@ -11,10 +11,3 @@ console.log(favorite);
 //   const reviews = document.getElementById('reviews');
 //   reviews.insertAdjacentHTML('beforeend', reviewHTML);
 // }
-
-// <% if @review.errors.any? %>
-//   refreshForm('<%= j render "reviews/form", restaurant: @restaurant, review: @review %>');
-// <% else %>
-//   addReview('<%= j render "reviews/show", review: @review %>');
-//   refreshForm('<%= j render "reviews/form", restaurant: @restaurant, review: Review.new %>');
-// <% end %>

@@ -1,11 +1,7 @@
-
-<%= @product.title  %>
-<%= @product.brand %>
-
 <div class="container">
   <h2>Produit recherché :</h2>
     <div class="product-card d-flex">
-      <%= image_tag "#{@product.image_url}" %>
+      <%= image_tag "#{@product.image_url}", class: "product-img" %>
       <div class="product-details">
         <h3><%= @product.title %></h3>
         <p><%= @product.brand %></p>
@@ -17,13 +13,16 @@
     </div>
 
   <h2>Options :</h2>
-    <div class="add-favorites">
+    <div class="add-favorites ml-3">
       <% @product.searches.each do |search| %>
         <% if search.favorite %>
-          <p><%= link_to "<i class='fas fa-star' style='color:#FECB1D;'></i>".html_safe, search_path(search), method: :patch, remote: true %>Favori</p>
+          <p id="star" class="btn-favorites"><%= link_to "<i class='fas fa-star' style='color:#FECB1D;'></i>".html_safe, search_path(search), method: :patch, remote: true %> Favori</p>
         <% else %>
-          <p><%= link_to "<i class='fas fa-star'></i>".html_safe, search_path(search), method: :patch, remote: true %>Ajouter aux favoris</p>
+          <p id="star" class="btn-favorites"><%= link_to "<i class='fas fa-star'></i>".html_safe, search_path(search), method: :patch, remote: true %>Ajouter aux favoris</p>
         <% end %>
       <% end %>
+    </div>
+    <div class="add-map ml-3">
+      <p><i class="fas fa-map-pin"></i> Où jeter ma bouteille en verre</p>
     </div>
 </div>

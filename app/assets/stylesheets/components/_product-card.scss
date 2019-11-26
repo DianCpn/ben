@@ -1,6 +1,3 @@
-.container {
-  margin-top: 10px;
-}
 
 .product-card {
   border: 1px solid lightgrey;
@@ -14,9 +11,12 @@
 .product-details {
   h3 {
     color: $green;
+    font-size: 24px;
+    margin-left: 10px;
   }
   p {
     color: $middle-gray;
+    margin-left: 10px;
   }
 }
 
@@ -27,4 +27,9 @@
   padding: 10px;
   margin: 10px;
   height: 100px;
+}
+
+.product-img {
+  width: 50px;
+  height: 80px;
 }
