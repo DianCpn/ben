@@ -1,4 +1,4 @@
-import "bootstrap";
+  import "bootstrap";
 import "quagga";
 import "../plugins/quagga";
 import "jquery"

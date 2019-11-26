@@ -12,6 +12,7 @@ class SearchesController < ApplicationController
     @search.user = @user
     @search.product = @product
     @search.save
+    # redirect_to product_show_path
   end
 
   def favorites
