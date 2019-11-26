@@ -1,11 +1,4 @@
-body{
-  height: 600px;
-}
-.container{
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
+
 .bottom-bar {
   background: #F4F4F4;
   display: flex;
@@ -40,8 +33,9 @@ body{
 // .bottom_bar a:hover {
 //   opacity: 1;
 // }
-.favorite{
+.favorite_btn{
   width: 50px;
+  margin-top: 7px;
 }
 .code-bar_container{
   position: relative;
@@ -60,11 +54,13 @@ body{
 
   }
 }
-.code-bar{
+.code-bar_btn{
   width: 50px;
+
 }
-.search{
+.search_btn{
   width: 50px;
+  margin-top: 7px;
 }
 
 
