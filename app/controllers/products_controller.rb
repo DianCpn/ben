@@ -1,3 +1,6 @@
+require 'httparty'
+require 'json'
+
 class ProductsController < ApplicationController
   skip_before_action :authenticate_user!
 
@@ -6,7 +9,11 @@ class ProductsController < ApplicationController
   end
 
   def create
+    response = HTTParty.get("https://world.openfoodfacts.org/api/v0/product/#{product_params[:upc]}.json")
     @product = Product.new(product_params)
+    @product.brand = response["product"]["brands_tags"][0]
+    @product.title = response["product"]["product_name_fr"]
+    @product.image_url = response["product"]["image_url"]
     @product.save
     @search = Search.new
     @search.user = current_user
@@ -19,5 +26,9 @@ class ProductsController < ApplicationController
 
   def product_params
     params.require(:product).permit(:upc)
+  end
+
+  def url(upc)
+    response = HTTParty.get('https://world.openfoodfacts.org/api/v0/product/#{upc}.json')
   end
 end
