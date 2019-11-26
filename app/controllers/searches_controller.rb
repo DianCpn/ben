@@ -3,16 +3,11 @@ class SearchesController < ApplicationController
 
   def new
     @search = Search.new
+    @product = Product.new
   end
 
   def create
-    @search = Search.new(search_params)
-    @user = current_user
-    @product = Product.find(params[:product_id])
-    @search.user = @user
-    @search.product = @product
-    @search.save
-    # redirect_to product_show_path
+
   end
 
   def favorites
@@ -44,7 +39,7 @@ class SearchesController < ApplicationController
 
   private
 
-  def search_params
-    params.require(:search).permit(:favorite)
+  def product_params
+    params.require(:product).permit(:upc)
   end
 end
