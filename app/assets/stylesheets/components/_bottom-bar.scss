@@ -1,0 +1,77 @@
+body{
+  height: 600px;
+}
+.container{
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.bottom-bar {
+  background: #F4F4F4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  // height: 10px;
+  color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+
+}
+.bottom-bar-links{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: #A8A9AD 2px solid ;
+  border-radius: 4px;
+  background-color: #A8A9AD;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 65px;
+}
+// .bottom_bar a {
+//   color: black;
+//   opacity: 0.15;
+//   text-decoration: none;
+//   font-size: 24px;
+//   padding: 0px 10px;
+// }
+// .bottom_bar a:hover {
+//   opacity: 1;
+// }
+.favorite{
+  width: 50px;
+}
+.code-bar_container{
+  position: relative;
+  width: 80px;
+
+  div {
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    background-color: #07B184;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 9px;
+
+  }
+}
+.code-bar{
+  width: 50px;
+}
+.search{
+  width: 50px;
+}
+
+
+
+// @media (max-width: 320px) {
+//   /* For a screen < 320px, this CSS will be read */
+//   .container {
+//     width: 200px;
+//   }
+// // }
