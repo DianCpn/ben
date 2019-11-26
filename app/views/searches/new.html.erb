@@ -1,16 +1,18 @@
   <div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="input-group">
-        <input id="scanner_input" class="form-control" placeholder="Click the button to scan an EAN..." type="text" />
-        <span class="input-group-btn">
+
+
+        <!-- <span class="input-group-btn">
           <button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
             <i class="fa fa-barcode"></i>
           </button>
-        </span>
-      </div><!-- /input-group -->
-    </div><!-- /.col-lg-6 -->
-  </div><!-- /.row -->
+        </span> -->
+        <br>
+        <br>
+        <br>
+        <div class="panel-body">
+          <div id='barcode-scanner'></div>
+        </div>
+
   <div class="modal" id="livestream_scanner">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -34,11 +36,12 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+ <%= render 'form' %>
+
 </div>
 
-<div id="livestream_scanner">
-  <div id="interactive" class="viewport"></div>
-</div>
+
 
 
 

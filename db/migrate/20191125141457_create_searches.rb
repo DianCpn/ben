@@ -3,8 +3,7 @@ class CreateSearches < ActiveRecord::Migration[5.2]
     create_table :searches do |t|
       t.references :user, foreign_key: true
       t.references :product, foreign_key: true
-      t.boolean :favorite
-
+      t.boolean :favorite, default: false
       t.timestamps
     end
   end
