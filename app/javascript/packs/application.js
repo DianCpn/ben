@@ -70,7 +70,6 @@ Quagga.init({
       setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);
     }
 
-
   });
 
   const upcField = document.getElementById('product_upc')

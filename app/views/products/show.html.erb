@@ -1,4 +1,9 @@
 
+<%= @product.title  %>
+<%= @product.brand %>
+
+
+<img src="" alt="" href="<%= @product.image_url %>">
 <div class="container">
   <h2>Produit recherché :</h2>
     <div class="product-card d-flex">
@@ -17,7 +22,7 @@
     <div class="add-favorites">
       <% @product.searches.each do |search| %>
         <% if search.favorite %>
-          <p><%= link_to "<i class='fas fa-star' style='color:#FECB1D;'></i>".html_safe, search_path(search), method: :patch, remote: true %>Favori</p>
+          <p><%= link_to "<i class='fas fa-star' style='-webkit-column-rule: #FECB1D;-moz-column-rule: #FECB1D;-o-column-rule: #FECB1D;column-rule: #FECB1D;'></i>".html_safe, search_path(search), method: :patch, remote: true %>Favori</p>
         <% else %>
           <p><%= link_to "<i class='fas fa-star'></i>".html_safe, search_path(search), method: :patch, remote: true %>Ajouter aux favoris</p>
         <% end %>
