@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  
-  resources :searches, only: [:new, :create, :edit, :update]
+
+  resources :searches, only: [:new, :create, :update, :edit]
   resources :products, only: [:show, :create]
 
   get "/favorites", to: "searches#favorites"
