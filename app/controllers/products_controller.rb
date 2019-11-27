@@ -15,6 +15,10 @@ class ProductsController < ApplicationController
     @product.title = response["product"]["product_name_fr"]
     @product.image_url = response["product"]["image_url"]
     @product.save
+    @product_package = Product_package.new
+    @product_package.product = @product
+    # rattachement du packaging au produit? fait à la console en manuel ou en seed
+    @product_package.save
     @search = Search.new
     @search.user = current_user
     @search.product = @product
