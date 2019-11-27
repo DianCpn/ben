@@ -1,5 +1,26 @@
 // Specific CSS for your home-page
 body {
   min-height: 100vh;
-  background-image: linear-gradient(45deg, white, #f7c201);
+  background-color: #c1fe1d;
+  background-image: linear-gradient(180deg, white, transparent);
+}
+
+h1 {
+  color: #1d50fe;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  .rounded-button {
+    display: table;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #cb1dfe;
+  }
 }
