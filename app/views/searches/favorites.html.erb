@@ -2,6 +2,7 @@
   <h1>Favorites</h1>
   <% @favorites.each do |favorite| %>
     <div class="card-favorite d-flex justify-content-between">
+      <%= image_tag "#{favorite.product.image_url}", class: "product-img" %>
       <div class="favorite-text">
         <h2><%= favorite.product.title %></h2>
         <p><%= favorite.product.brand %></p>
