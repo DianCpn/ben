@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:upc)
+    params.require(:product).permit(:upc, :photo)
   end
 
   def url(upc)
