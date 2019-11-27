@@ -10,7 +10,7 @@ class OpenfoodfactsService
   def call
     response = HTTParty.get("https://world.openfoodfacts.org/api/v0/product/#{@upc}.json")
   end
-endgit
+end
 
 # faire a la main ou seeder le type de packaging
 test_upc = 5410041010800

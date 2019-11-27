@@ -27,3 +27,12 @@
       <p><i class="fas fa-map-pin"></i> Où jeter ma bouteille en verre</p>
     </div>
 </div>
+
+
+<!-- ajout du code pour afficher la photo, post cloudinary install -->
+
+<%#= cl_image_tag @product.photo.key, height: 300, width: 400, crop: :fill %>
+
+<!-- ou bien -->
+
+<!-- <img src="" alt="" href="<%= cl_image_path @product.photo.key, height: 300, width: 400, crop: :fill %>"> -->

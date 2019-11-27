@@ -80,13 +80,6 @@ if (document.getElementById("scan")) {
         console.log(event);
       });
 
-    // Stop quagga in any case, when the modal is closed
-      // $('#livestream_scanner').on('hide.bs.modal', function(){
-      //   if (Quagga){
-      //     Quagga.stop();
-      //   }
-      // });
-
     // Call Quagga.decodeSingle() for every file selected in the
     // file input
     // $("#livestream_scanner input:file").on("change", function(e) {

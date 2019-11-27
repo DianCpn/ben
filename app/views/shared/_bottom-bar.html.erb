@@ -1,6 +1,10 @@
 <div class="bottom-bar">
     <div class="bottom-bar-links">
-      <div><%= image_tag "002-favorites.svg", class: "favorite_btn"%></div>
+      <div>
+        <%= link_to favorites_path do %>
+          <%= image_tag "002-favorites.svg", class: "favorite_btn"%>
+        <% end %>
+      </div>
       <div class="code-bar_container">
         <div>
           <%= link_to new_search_path do %>
