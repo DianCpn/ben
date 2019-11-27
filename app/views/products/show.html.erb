@@ -11,15 +11,14 @@
 
   <h2>Consignes de tri :</h2>
     <div class="sorting-card">
+      <%= @product %>
     </div>
 
   <h2>Options :</h2>
     <div class="add-favorites ml-3">
       <% @product.searches.each do |search| %>
         <div class="favorite-btn">
-
           <%= render 'searches/yellow_star', search: search %>
-
         </div>
       <% end %>
     </div>
