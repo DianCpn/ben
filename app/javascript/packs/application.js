@@ -72,12 +72,12 @@ Quagga.init({
 
   });
 
-  const upcField = document.getElementById('product_upc')
-    console.log(upcField)
-    upcField.addEventListener('blur', (event) =>{
-      //
-      console.log(event);
-    });
+  // const upcField = document.getElementById('product_upc')
+  //   console.log(upcField)
+  //   upcField.addEventListener('blur', (event) =>{
+  //     //
+  //     console.log(event);
+  //   });
 
   // Stop quagga in any case, when the modal is closed
     // $('#livestream_scanner').on('hide.bs.modal', function(){
