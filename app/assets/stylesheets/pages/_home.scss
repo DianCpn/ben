@@ -7,12 +7,14 @@ body {
 h1 {
   color: #535456;
   text-align: center;
-  font-weight: semi-bold;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 p {
   color: white;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 .container {
@@ -20,21 +22,31 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  .buttons {
-    display: flex;
-    justify-content: space-evenly;
-    .rounded-button {
-      display: table;
-      border: black solid 2px;
-      border-radius: 50px;
-      padding: 15px;
-      background-color: #d750fe;
+
+  .image_buddies {
+    margin-left: 3vh;
+    margin-bottom: 25px;
+  }
+  .row {
+    flex-wrap: wrap-reverse;
+    margin-right: -15px;
+    margin-left: -15px;
+    .yellow-squared-button {
+      color: white;
+      background-color: #FECB1D;
+      text-align: center;
+      padding: 30px 20px 20px 20px;
     }
-    .squared-button {
-      display: table;
-      border-radius: 10px;
-      padding: 15px;
-      background-color: #d750fe;
+    .grey-squared-button {
+      color: white;
+      background-color: #A8A9AD;
+      text-align: center;
+      padding: 30px 20px 20px 20px;
+    }
+    .green-long-button {
+      background-color: #07B184;
+      text-align: center;
+      padding: 30px 20px 20px 20px;
     }
   }
 }
