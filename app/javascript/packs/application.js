@@ -12,7 +12,7 @@ if (document.getElementById("scan")) {
         target: document.querySelector('#barcode-scanner'),    // Or '#yourElement' (optional)
         constraints: {
           width: 375,
-          height: 600,
+          height: 700,
 
           facingMode: "environment" // or "user" for the front camera
         },

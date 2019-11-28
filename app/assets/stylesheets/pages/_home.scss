@@ -17,6 +17,15 @@ p {
   margin-top: 10px;
 }
 
+.sticky-footer {
+  min-height: calc(100vh)
+}
+
+.bottom-navbar {
+  position: sticky;
+  bottom: 0px;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
