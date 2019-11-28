@@ -1,4 +1,21 @@
-<div class="container my-5">
-<h1>Triez avec Ben</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1>Triez avec Ben</h1>
+  <div class="image_buddies">
+    <%= image_tag "PoubellesP.png", alt: "Poubelles", width: 300 %>
+  </div>
+  <div class="buttons">
+   <div class="squared-button">
+      <%= link_to favorites_path do %>
+        <%= image_tag "002-favorites.svg", class: "favorite_btn"%>
+      <% end %>
+    </div>
+    <div class= "rounded-button">
+      <%= link_to new_search_path do %>
+        <%= image_tag "003-line.svg", class: "code-bar_btn" %>
+      <% end %>
+    </div>
+    <div class="squared-button">
+      <%= image_tag "001-search.svg", class: "search_btn"%></div>
+    </div>
+  </div>
 </div>

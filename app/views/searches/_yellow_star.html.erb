@@ -1,0 +1,7 @@
+<% if search.favorite %>
+  <p id="fav" class="fav-btn"><%= link_to "<i class='fas fa-star' style='color:#FECB1D;'></i>".html_safe, search_path(search), method: :patch, remote: true %>Favoris</p>
+<% else %>
+  <p id="no_fav" class="fav-btn"><%= link_to "<i class='fas fa-star' style='color:#A8A9AD;'></i>".html_safe, search_path(search), method: :patch, remote: true %>Ajouter aux favoris</p>
+<% end %>
+
+

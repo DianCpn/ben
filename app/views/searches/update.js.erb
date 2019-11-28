@@ -1,13 +1,9 @@
+function refreshStar(innerHTML) {
 
-const favorite = document.getElementById("star");
-favorite.classList.toggle("btn-favorites");
+  const newStar = document.querySelector('.favorite-btn');
+  newStar.innerHTML = innerHTML;
 
-// function refreshForm(innerHTML) {
-//   const newReviewForm = document.getElementById('new_review');
-//   newReviewForm.innerHTML = innerHTML;
-// }
+};
 
-// function addReview(reviewHTML) {
-//   const reviews = document.getElementById('reviews');
-//   reviews.insertAdjacentHTML('beforeend', reviewHTML);
-// }
+refreshStar('<%= j render "searches/yellow_star", search: @search %>');
+
