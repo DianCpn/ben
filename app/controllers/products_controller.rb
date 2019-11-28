@@ -14,37 +14,40 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    response = OpenfoodfactsService.new(product_params[:upc]).call
+    @base_product = Product.find_by(upc: "3664346311601")
 
+    if @base_product.present?
+      @product = @base_product
+    else
+      response = OpenfoodfactsService.new(product_params[:upc]).call
+      @product.title = response["product"]["product_name"]
+      @product.brand = response["product"]["brands"]
 
-    @product.title = response["product"]["product_name"]
-    @product.brand = response["product"]["brands"]
+      @package = response["product"]["packaging"]
+      package_array = @package.downcase.gsub(",", " ").split(" ").uniq
 
-    @package = response["product"]["packaging"]
-    package_array = @package.downcase.gsub(",", " ").split(" ").uniq
+      package_array.map! do |item|
+        if CARTON.include?(item)
+          item = "carton"
+        elsif GLASS.include?(item)
+          item = "verre"
+        elsif METAL.include?(item)
+          item = "metal"
+        elsif PLASTIC.include?(item)
+          item = "plastique"
+        else
+          item = "undefined"
+        end
+      end
 
-    package_array.map! do |item|
-      if CARTON.include?(item)
-        item = "carton"
-      elsif GLASS.include?(item)
-        item = "verre"
-      elsif METAL.include?(item)
-        item = "metal"
-      elsif PLASTIC.include?(item)
-        item = "plastique"
-      else
-        item = "undefined"
+      clean_result = package_array.reject {|x| x == "undefined"}
+      @product.package_array = clean_result
+      @product.save
+
+      @product.package_array.each do |item|
+        product_package = ProductPackage.create!(product: @product, packaging: Packaging.find_by(category: item))
       end
     end
-
-    clean_result = package_array.reject {|x| x == "undefined"}
-    @product.package_array = clean_result
-    @product.save
-
-    @product.package_array.each do |item|
-      product_package = ProductPackage.create!(product: @product, packaging: Packaging.find_by(category: item))
-    end
-
 
     redirect_to product_path(@product)
 
