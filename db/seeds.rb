@@ -26,11 +26,10 @@ User.destroy_all
 
 # -------------------------------------
 puts "seeding packaging ..."
-carton = Packaging.create(category: "carton")
-plastique = Packaging.create(category: "plastique")
-bouteille_plastique = Packaging.create(category: "bouteille_plastique")
-metal = Packaging.create(category: "metal")
-verre = Packaging.create(category: "verre")
+carton = Packaging.create(category: "carton", instruction: "A recycler dans la poubelle jaune")
+plastique = Packaging.create(category: "plastique", instruction: "A recycler dans la poubelle jaune")
+metal = Packaging.create(category: "metal", instruction: "A recycler dans la poubelle jaune")
+verre = Packaging.create(category: "verre", instruction: "A recycler dans la poubelle blanche")
 puts "packaging seeded!"
 
 puts "seeding products ..."
@@ -39,8 +38,8 @@ puts "seeding products ..."
 milka_chocolat_au_lait = Product.new(
   brand: "Milka",
   title: "Chocolat au lait",
-  upc: "7622210719881"
-
+  upc: "7622210719881",
+  package_array: ["plastique"]
 )
 # milka_chocolat_au_lait_file = URI.open('https://static.openfoodfacts.org/images/products/762/221/071/9881/front_fr.4.200.jpg')
 # milka_chocolat_au_lait.photo.attach(io: milka_chocolat_au_lait_file, filename: 'front_fr.4.200.jpg', content_type: 'image/jpg')
@@ -51,8 +50,8 @@ puts 'milka_chocolat_au_lait created!'
 connetable_sardine_nature = Product.new(
   brand: "Connetable",
   title: "Sardine nature",
-  upc: "3263670162219"
-
+  upc: "3263670162219",
+  package_array: ["metal"]
 )
 # connetable_sardine_nature = URI.open('https://static.openfoodfacts.org/images/products/326/367/016/2219/front_fr.31.100.jpg')
 # connetable_sardine_nature.photo.attach(io: connetable_sardine_nature, filename: 'front_fr.31.100.jpg', content_type: 'image/jpg')
@@ -64,8 +63,8 @@ puts 'connetable_sardine-nature created!'
 iris_pasta_di_semola = Product.new(
   brand: "Iris",
   title: "Pasta di semola",
-  upc: "8015197024120"
-
+  upc: "8015197024120",
+  package_array: ["plastique"]
 )
 # iris_pasta_di_semola = URI.open('https://static.openfoodfacts.org/images/products/801/519/702/4120/front_fr.3.200.jpg')
 # iris_pasta_di_semola.photo.attach(io: iris_pasta_di_semola, filename: 'front_fr.3.200.jpg', content_type: 'image/jpg')
@@ -76,8 +75,8 @@ puts 'iris_pasta_di_semola created!'
 markal_flocons_de_cereales = Product.new(
   brand: "Markal",
   title: "Flocons De Cereales",
-  upc: "3329483701202"
-
+  upc: "3329483701202",
+  package_array: ["plastique"]
 )
 # markal_flocons_de_cereales = URI.open('https://static.openfoodfacts.org/images/products/801/519/702/4120/front_fr.3.200.jpg')
 # markal_flocons_de_cereales.photo.attach(io: markal_flocons_de_cereales, filename: 'front_fr.3.200.jpg', content_type: 'image/jpg')
@@ -88,8 +87,8 @@ puts 'markal_flocons_de_cereales created!'
 krema_mini_cub_bio = Product.new(
   brand: "Krema",
   title: "Mini cub bio",
-  upc: "3664346311601"
-
+  upc: "3664346311601",
+  package_array: ["plastique"]
 )
 # krema_mini_cub_bio = URI.open('https://static.openfoodfacts.org/images/products/366/434/631/1601/front_fr.31.100.jpg')
 # krema_mini_cub_bio.photo.attach(io: krema_mini_cub_bio, filename: 'front_fr.31.100.jpg', content_type: 'image/jpg')
@@ -100,8 +99,8 @@ puts 'krema_mini_cub_bio created!'
 tyrrells_chips_de_betterave = Product.new(
   brand: "Tyrrells",
   title: "Chips de betterave,  panais et carotte au sel de mer",
-  upc: "5060042640515"
-
+  upc: "5060042640515",
+  package_array: ["plastique"]
 )
 # tyrrells_chips_de_betterave = URI.open('https://static.openfoodfacts.org/images/products/506/004/264/0515/front_fr.45.400.jpg')
 # tyrrells_chips_de_betterave.photo.attach(io: tyrrells_chips_de_betterave, filename: 'front_fr.45.400.jpg', content_type: 'image/jpg')
@@ -113,8 +112,8 @@ puts 'tyrrells_chips_de_betterave created!'
 dacco_bello_formule_peps = Product.new(
   brand: "Dacco bello",
   title: "Formule pep’s",
-  upc: "3270720001541"
-
+  upc: "3270720001541",
+  package_array: ["plastique"]
 )
 # dacco_bello_formule_peps = URI.open('')
 # dacco_bello_formule_peps.photo.attach(io: dacco_bello_formule_peps, filename: '', content_type: 'image/jpg')
@@ -125,8 +124,8 @@ puts 'dacco_bello_formule_peps created!'
 evian = Product.new(
   brand: "Evian",
   title: "Evian 1.5L",
-  upc: "3068320120256"
-
+  upc: "3068320120256",
+  package_array: ["plastique"]
 )
 evian.save
 puts 'evian created!'
@@ -135,8 +134,8 @@ puts 'evian created!'
 brioche_pasquier_pitch_gout_chocolat = Product.new(
   brand: "Brioche Pasquier",
   title: "Pitch gout Chocolat",
-  upc: "3256540000636"
-
+  upc: "3256540000636",
+  package_array: ["carton"]
 )
 brioche_pasquier_pitch_gout_chocolat.save
 puts 'brioche_pasquier_pitch_gout_chocolat created!'
@@ -145,8 +144,8 @@ puts 'brioche_pasquier_pitch_gout_chocolat created!'
 la_baleine_sel_fin = Product.new(
   brand: "La baleine",
   title: "Sel Fin ",
-  upc: "3183280017337"
-
+  upc: "3183280017337",
+  package_array: ["plastique"]
 )
 la_baleine_sel_fin.save
 puts 'la_baleine_sel_fin created!'
@@ -155,8 +154,8 @@ puts 'la_baleine_sel_fin created!'
 daddy_sucre_en_poudre = Product.new(
   brand: "Daddy",
   title: "Sucre en poudre, Distributeur de Bûchettes de Sucre",
-  upc: "3165431690002"
-
+  upc: "3165431690002",
+  package_array: ["carton"]
 )
 daddy_sucre_en_poudre.save
 puts 'daddy_sucre_en_poudre created!'
@@ -165,8 +164,8 @@ puts 'daddy_sucre_en_poudre created!'
 casino_miel_de_fleurs_cremeux = Product.new(
   brand: "Casino",
   title: "Miel de fleurs cremeux",
-  upc: "3222472194446"
-
+  upc: "3222472194446",
+  package_array: ["plastique"]
 )
 casino_miel_de_fleurs_cremeux.save
 puts 'casino_miel_de_fleurs_cremeux created!'
@@ -175,8 +174,8 @@ puts 'casino_miel_de_fleurs_cremeux created!'
 casino_sirop_de_peche = Product.new(
   brand: "Casino",
   title: "Sirop de Peche",
-  upc: "3222471448915"
-
+  upc: "3222471448915",
+  package_array: ["metal"]
 )
 casino_sirop_de_peche.save
 puts 'casino_sirop_de_peche created!'
@@ -185,8 +184,8 @@ puts 'casino_sirop_de_peche created!'
 tetley_the_noir_anglais = Product.new(
   brand: "Tetley",
   title: "Thé noir anglais",
-  upc: "3222471448915"
-
+  upc: "3222471448915",
+  package_array: ["carton"]
 )
 tetley_the_noir_anglais.save
 puts 'tetley_the_noir_anglais created!'
@@ -196,8 +195,8 @@ puts 'tetley_the_noir_anglais created!'
 knorr_soupe_bio_potiron_carottes = Product.new(
   brand: "Knorr",
   title: "Soupe bio potiron carottes",
-  upc: "8714100742860"
-
+  upc: "8714100742860",
+  package_array: ["carton"]
 )
 knorr_soupe_bio_potiron_carottes.save
 puts 'knorr_soupe_bio_potiron_carottes created!'
@@ -207,8 +206,8 @@ puts 'knorr_soupe_bio_potiron_carottes created!'
 maille_velours_de_vinaigre_balsamique = Product.new(
   brand: "Maille",
   title: "Velours de vinaigre Balsamique",
-  upc: "8722700197508"
-
+  upc: "8722700197508",
+  package_array: ["verre"]
 )
 maille_velours_de_vinaigre_balsamique.save
 puts 'maille_velours_de_vinaigre_balsamique created!'
@@ -218,7 +217,7 @@ maille_vinaigre_de_xeres = Product.new(
   brand: "Maille",
   title: "Vinaigre de Xeres",
   upc: "3036810230464",
-
+  package_array: ["verre"]
 )
 maille_vinaigre_de_xeres.save
 puts 'maille_vinaigre_de_xeres created!'
@@ -233,13 +232,13 @@ ProductPackage.create(product: markal_flocons_de_cereales, packaging: plastique)
 ProductPackage.create(product: krema_mini_cub_bio, packaging: plastique)
 ProductPackage.create(product: tyrrells_chips_de_betterave, packaging: plastique)
 ProductPackage.create(product: dacco_bello_formule_peps, packaging: plastique)
-ProductPackage.create(product: evian, packaging: bouteille_plastique)
+ProductPackage.create(product: evian, packaging: plastique)
 ProductPackage.create(product: brioche_pasquier_pitch_gout_chocolat, packaging: plastique)
 ProductPackage.create(product: la_baleine_sel_fin, packaging: carton)
 ProductPackage.create(product: la_baleine_sel_fin, packaging: plastique)
 ProductPackage.create(product: daddy_sucre_en_poudre, packaging: carton)
 ProductPackage.create(product: casino_miel_de_fleurs_cremeux, packaging: plastique)
-ProductPackage.create(product: casino_sirop_de_peche, packaging: bouteille_plastique)
+ProductPackage.create(product: casino_sirop_de_peche, packaging: metal)
 ProductPackage.create(product: tetley_the_noir_anglais, packaging: carton)
 ProductPackage.create(product: knorr_soupe_bio_potiron_carottes, packaging: carton)
 ProductPackage.create(product: maille_velours_de_vinaigre_balsamique, packaging: verre)

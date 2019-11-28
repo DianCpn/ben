@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  CARTON = ["carton"]
+  CARTON = ["carton", "paquet"]
   GLASS  = ["verre", "glass", "bocal"]
   METAL = ["aluminum", "metal", "conserve", "métal"]
   PLASTIC = ["plastique", "plastic", "sachet"]
