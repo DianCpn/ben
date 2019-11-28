@@ -10,13 +10,14 @@
     </div>
 
   <h2>Consignes de tri :</h2>
-    <div class="sorting-card">
-      <ul>
         <% @product.product_packages.each do |item| %>
-          <li><%= item.packaging.category %> => <%= item.packaging.instruction %></li>
-        <% end %>
-      </ul>
-    </div>
+          <div class="product-card d-flex">
+              <%= image_tag "#{@product.image_url}", class: "product-img" %>
+              <div class="product-details">
+                <h3><%= item.packaging.category.capitalize %></h3><p><%= item.packaging.instruction %></p>
+              </div>
+          </div>
+          <% end %>
 
   <h2>Options :</h2>
     <div class="add-favorites ml-3">

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_28_102645) do
+ActiveRecord::Schema.define(version: 2019_11_28_143407) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 2019_11_28_102645) do
   create_table "searches", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "product_id"
-    t.boolean "favorite"
+    t.boolean "favorite", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_searches_on_product_id"
