@@ -12,26 +12,26 @@ h1 {
 }
 
 .container-home {
-p {
-  color: white;
-  font-size: 20px;
-  margin-top: 10px;
-}
-  
-.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
+  p {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
   .image_buddies {
     display: block;
     margin: 30px auto;
   }
-  .row {
+  .row-home {
     flex-wrap: wrap-reverse;
     margin-right: -15px;
     margin-left: -15px;
+
     .yellow-squared-button {
       background-color: #FECB1D;
       text-align: center;
