@@ -15,13 +15,13 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     @base_product = Product.find_by(upc: "#{product_params[:upc]}")
-    @search = Search.new
     @user = current_user
-    @search.user = @user
     if @base_product.present?
       @product = @base_product
-      @search.product = @product
+      @search = Search.find_by(product_id: @product.id)
     else
+      @search = Search.new
+      @search.user = @user
       response = OpenfoodfactsService.new(product_params[:upc]).call
       @product.title = response["product"]["product_name"]
       @product.brand = response["product"]["brands"]
@@ -43,15 +43,16 @@ class ProductsController < ApplicationController
         end
       end
 
-      clean_result = package_array.reject {|x| x == "undefined"}
+      clean_result = package_array.reject { |x| x == "undefined" }
       @product.package_array = clean_result.uniq
       @product.save
       @search.product = @product
+      @search.save
+
       @product.package_array.each do |item|
         product_package = ProductPackage.create!(product: @product, packaging: Packaging.find_by(category: item))
       end
     end
-    @search.save
 
     redirect_to product_path(@product)
 
