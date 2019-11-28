@@ -26,7 +26,7 @@ class SearchesController < ApplicationController
     @favorite = @search.favorite ? false : true
     if @search.update(favorite: @favorite)
       respond_to do |format|
-        format.html { redirect_to product_path(@search.product_id) }
+        format.html { redirect_to favorites_path }
         format.js  # <-- will render `app/views/reviews/create.js.erb`
       end
     else

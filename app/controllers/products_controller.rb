@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    @base_product = Product.find_by(upc: "3664346311601")
+    @base_product = Product.find_by(upc: "3263670162219")
 
     if @base_product.present?
       @product = @base_product

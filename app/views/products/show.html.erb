@@ -1,8 +1,7 @@
 
 <div class="container">
   <h2>Produit recherché :</h2>
-    <div class="product-card d-flex">
-      <%= image_tag "#{@product.image_url}", class: "product-img" %>
+    <div class="product-card">
       <div class="product-details">
         <h3><%= @product.title %></h3>
         <p><%= @product.brand %></p>
@@ -13,7 +12,11 @@
     <div class="sorting-card">
       <ul>
         <% @product.product_packages.each do |item| %>
-          <li><%= item.packaging.category %> => <%= item.packaging.instruction %></li>
+          <% if item.packaging.category == "carton" || "plastique" || "metal" %>
+            <li><i class="fas fa-trash" style='color:#FECB1D;'></i> <%= item.packaging.category %> : <%= item.packaging.instruction %></li>
+          <% else item.packaging.category == "glass" %>
+            <li><i class="fas fa-trash" style='color:#3f96c1;'><i class="fas fa-trash"></i> <%= item.packaging.category %> : <%= item.packaging.instruction %></li>
+          <% end %>
         <% end %>
       </ul>
     </div>
