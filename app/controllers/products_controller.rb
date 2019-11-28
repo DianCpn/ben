@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
     @product.title = response["product"]["product_name"]
     @product.brand = response["product"]["brands"]
     @product.save
-<<<<<<< HEAD
+
     @package = response["product"]["packaging"]
     package_array = @package.downcase.gsub(" ", "").split(",")
 
@@ -48,8 +48,7 @@ class ProductsController < ApplicationController
     end
 
 
-=======
->>>>>>> 89d372da51459d381e91aa5e208fc6aee47618e6
+
     @product_package = ProductPackage.new
     @product_package.product = @product
     result_glass.include?(true)
