@@ -12,7 +12,8 @@
         <% @product.product_packages.each do |item| %>
           <div class="sorting-card">
             <% if item.packaging.category == "carton" || "plastique" || "metal" %>
-              <h3><i class="fas fa-trash" style='color:#FECB1D;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></h3>
+              <h3><i class="fas fa-trash" style='color:#FECB1D;'></i> <%= item.packaging.category.capitalize %></h3>
+              <p><%= item.packaging.instruction %></p>
             <% else item.packaging.category == "glass" %>
               <h3><i class="fas fa-trash" style='color:#3f96c1;'><i class="fas fa-trash"></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></h3>
             <% end %>
