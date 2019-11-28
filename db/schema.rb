@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 2019_11_28_102645) do
   create_table "searches", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "product_id"
-    t.boolean "favorite", default: false
+    t.boolean "favorite"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_searches_on_product_id"
