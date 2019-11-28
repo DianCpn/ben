@@ -5,9 +5,14 @@ body {
 }
 
 h1 {
-  color: #1d50fe;
+  color: #535456;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2)
+  font-weight: semi-bold;
+}
+
+p {
+  color: white;
+  font-size: 20px;
 }
 
 .container {
@@ -27,7 +32,6 @@ h1 {
     }
     .squared-button {
       display: table;
-      border: black solid 2px;
       border-radius: 10px;
       padding: 15px;
       background-color: #d750fe;
