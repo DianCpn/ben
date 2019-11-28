@@ -1,8 +1,7 @@
 
 <div class="container">
   <h2>Produit recherché :</h2>
-    <div class="product-card d-flex">
-      <%= image_tag "#{@product.image_url}", class: "product-img" %>
+    <div class="product-card">
       <div class="product-details">
         <h3><%= @product.title %></h3>
         <p><%= @product.brand %></p>
@@ -11,13 +10,14 @@
 
   <h2>Consignes de tri :</h2>
         <% @product.product_packages.each do |item| %>
-          <div class="product-card d-flex">
-              <%= image_tag "#{@product.image_url}", class: "product-img" %>
-              <div class="product-details">
-                <h3><%= item.packaging.category.capitalize %></h3><p><%= item.packaging.instruction %></p>
-              </div>
+          <div class="sorting-card">
+            <% if item.packaging.category == "carton" || "plastique" || "metal" %>
+              <h3><i class="fas fa-trash" style='color:#FECB1D;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></h3>
+            <% else item.packaging.category == "glass" %>
+              <h3><i class="fas fa-trash" style='color:#3f96c1;'><i class="fas fa-trash"></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></h3>
+            <% end %>
           </div>
-          <% end %>
+        <% end %>
 
   <h2>Options :</h2>
     <div class="add-favorites ml-3">
