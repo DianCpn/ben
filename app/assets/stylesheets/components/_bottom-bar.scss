@@ -1,7 +1,6 @@
 
 
 .bottom-bar {
-  background: $light-gray;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -17,11 +16,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border: #A8A9AD 2px solid ;
+  // border: #07B184 2px solid ;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 4px;
   background-color: $light-gray;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
   height: 65px;
 }
 // .bottom_bar a {
@@ -35,16 +35,16 @@
 //   opacity: 1;
 // }
 .favorite_btn{
-  width: 50px;
-  margin-top: 7px;
+  width: 40px;
+  margin-top: 10px;
 }
 .code-bar_container{
   position: relative;
-  width: 80px;
+  width: 70px;
 
   div {
-    width: 80px;
-    height:80px;
+    width: 65px;
+    height:65px;
     border-radius: 50%;
     background-color: #07B184;
     color: white;
@@ -52,17 +52,19 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 11px;
+    bottom: 30px;
+    box-shadow: 0px 10px 5px  rgba(0,0,0,0.2);
 
   }
 }
 .code-bar_btn{
-  width: 50px;
+  width: 40px;
+  color: white;
 
 }
 .search_btn{
-  width: 50px;
-  margin-top: 7px;
+  width: 40px;
+  margin-top: 9px;
 }
 
 

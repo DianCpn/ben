@@ -9,17 +9,15 @@
     </div>
 
   <h2>Consignes de tri :</h2>
-    <div class="sorting-card">
-      <ul>
         <% @product.product_packages.each do |item| %>
-          <% if item.packaging.category == "carton" || "plastique" || "metal" %>
-            <li><i class="fas fa-trash" style='color:#FECB1D;'></i> <%= item.packaging.category %> : <%= item.packaging.instruction %></li>
-          <% else item.packaging.category == "glass" %>
-            <li><i class="fas fa-trash" style='color:#3f96c1;'><i class="fas fa-trash"></i> <%= item.packaging.category %> : <%= item.packaging.instruction %></li>
-          <% end %>
+          <div class="sorting-card">
+            <% if item.packaging.category == "carton" || "plastique" || "metal" %>
+              <h3><i class="fas fa-trash" style='color:#FECB1D;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></h3>
+            <% else item.packaging.category == "glass" %>
+              <h3><i class="fas fa-trash" style='color:#3f96c1;'><i class="fas fa-trash"></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></h3>
+            <% end %>
+          </div>
         <% end %>
-      </ul>
-    </div>
 
   <h2>Options :</h2>
     <div class="add-favorites ml-3">

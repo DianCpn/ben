@@ -8,11 +8,12 @@ if (document.getElementById("scan")) {
       inputStream : {
         name : "Live",
         type : "LiveStream",
+
         target: document.querySelector('#barcode-scanner'),    // Or '#yourElement' (optional)
         constraints: {
-          width: {min: 640},
-          height: {min: 480},
-          aspectRatio: {min: 1, max: 100},
+          width: 375,
+          height: 600,
+
           facingMode: "environment" // or "user" for the front camera
         },
         locator: {
@@ -22,8 +23,9 @@ if (document.getElementById("scan")) {
         numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
       },
       decoder : {
-        readers : ['ean_reader', 'ean_8_reader'],
-        locate: true
+        readers : ['ean_reader'],
+        locate: true,
+        frequency: 1,
       }
     }, function(err) {
         if (err) {
