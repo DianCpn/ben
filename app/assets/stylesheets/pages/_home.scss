@@ -12,43 +12,40 @@ h1 {
 }
 
 .container-home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
   p {
     color: white;
     font-size: 20px;
     margin-top: 10px;
   }
 
-  .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  .image_buddies {
+    display: block;
+    margin: 30px auto;
+  }
+  .row-home {
+    flex-wrap: wrap-reverse;
+    margin-right: -15px;
+    margin-left: -15px;
 
-    .image_buddies {
-      display: block;
-      margin: 30px auto;
+    .yellow-squared-button {
+      background-color: #FECB1D;
+      text-align: center;
+      padding: 30px 20px 20px 20px;
     }
-    .row {
-      flex-wrap: wrap-reverse;
-      margin-right: -15px;
-      margin-left: -15px;
-
-      .yellow-squared-button {
-        background-color: #FECB1D;
-        text-align: center;
-        padding: 30px 20px 20px 20px;
-      }
-      .grey-squared-button {
-        background-color: #A8A9AD;
-        text-align: center;
-        padding: 30px 20px 20px 20px;
-      }
-      .green-long-button {
-        background-color: #07B184;
-        text-align: center;
-        padding: 30px 20px 20px 20px;
-      }
+    .grey-squared-button {
+      background-color: #A8A9AD;
+      text-align: center;
+      padding: 30px 20px 20px 20px;
+    }
+    .green-long-button {
+      background-color: #07B184;
+      text-align: center;
+      padding: 30px 20px 20px 20px;
     }
   }
 }
-
