@@ -33,7 +33,6 @@
 
 .sorting-card {
   border: 1px solid lightgrey;
-  background: linear-gradient(180deg, #FECB1D 0%, #FFE487 100%);
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   margin: 10px;
@@ -54,14 +53,22 @@
   .image-bin{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
     padding-bottom: 40px;
     img {
       width: 45vw;
+      height: 70%;
     }
-
   }
 }
 
+.yellow {
+  background: linear-gradient(180deg, #FECB1D 0%, #FFE487 100%);
+}
+
+.yellow {
+  background: linear-gradient(180deg, #07B184 0%, #0ff6b8 100%);
+}
 .product-img {
   width: 50px;
   height: 80px;
