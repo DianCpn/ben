@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
       response = OpenfoodfactsService.new(product_params[:upc]).call
       @product.title = response["product"]["product_name"]
       @product.brand = response["product"]["brands"]
-
+      raise
       @package = response["product"]["packaging"]
       package_array = @package.downcase.gsub(",", " ").split(" ").uniq
 
