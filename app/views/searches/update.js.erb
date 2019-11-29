@@ -1,6 +1,6 @@
 function refreshStar(innerHTML) {
 
-  const newStar = document.querySelector('.favorite-btn');
+  const newStar = document.querySelector("[data-star='<%= @search.id %>']");
   newStar.innerHTML = innerHTML;
 
 };
