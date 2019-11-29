@@ -30,15 +30,12 @@
   }
 }
 
-
 .sorting-card {
   border: 1px solid lightgrey;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   margin: 10px;
   margin-top: 0;
-  padding-top: 20px;
-  padding-left: 10px;
 
   h3 {
     font-size: 24px;
@@ -63,10 +60,18 @@
 }
 
 .yellow {
+  border-radius: 10px;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 10px;
   background: linear-gradient(180deg, #FECB1D 0%, #FFE487 100%);
 }
 
-.yellow {
+.green {
+  border-radius: 10px;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 10px;
   background: linear-gradient(180deg, #07B184 0%, #0ff6b8 100%);
 }
 .product-img {
