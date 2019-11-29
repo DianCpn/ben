@@ -4,18 +4,23 @@ import "../plugins/quagga";
 import "jquery";
 
 if (document.getElementById("scan")) {
+  const constraints = {
+    // this is super weird: we voluntarily inverse height and width so it works
+    // on mobile. This seems linked to mobile devices orientation, and seems
+    // to be linked to getUserMedia and not Quagga
+    // cf https://github.com/serratus/quaggaJS/issues/245
+    width: document.querySelector("body").offsetHeight,
+    height: document.querySelector("body").offsetWidth,
+    facingMode: "environment" // or "user" for the front camera
+  }
+  console.log("constraints is ", constraints);
   Quagga.init({
       inputStream : {
         name : "Live",
         type : "LiveStream",
 
         target: document.querySelector('#barcode-scanner'),    // Or '#yourElement' (optional)
-        constraints: {
-          width: 375,
-          height: 700,
-
-          facingMode: "environment" // or "user" for the front camera
-        },
+        constraints: constraints,
         locator: {
           patchSize: "medium",
           halfSample: true
@@ -24,7 +29,7 @@ if (document.getElementById("scan")) {
       },
       decoder : {
         readers : ['ean_reader'],
-        locate: true,
+        // locate: true,
         frequency: 1,
       }
     }, function(err) {
@@ -75,12 +80,15 @@ if (document.getElementById("scan")) {
 
     });
 
-    const upcField = document.getElementById('product_upc')
-      console.log(upcField)
-      upcField.addEventListener('blur', (event) =>{
-        //
-        console.log(event);
-      });
+    const canvas = document.querySelector('#barcode-scanner.drawingBuffer');
+    console.log(canvas)
+
+    // const upcField = document.getElementById('product_upc')
+    //   console.log(upcField)
+    //   upcField.addEventListener('blur', (event) =>{
+    //     //
+    //     console.log(event);
+    //   });
 
     // Call Quagga.decodeSingle() for every file selected in the
     // file input
