@@ -54,7 +54,10 @@
   .image-bin{
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    img {
+      width: 45vw;
+    }
 
   }
 }
