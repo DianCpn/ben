@@ -39,7 +39,6 @@ class ProductsController < ApplicationController
 
         @package = response["product"]["packaging"]
         package_array = @package.downcase.gsub(",", " ").split(" ").uniq
-
         package_array.map! do |item|
           if CARTON.include?(item)
             item = "carton"
