@@ -2,35 +2,11 @@
 
 <div class="container">
   <h2 class="localisation">Je trie à &nbsp;<i class="fas fa-map-marked-alt"></i> &nbsp; Paris 11ème </h2>
-  <div class="product-card">
+  <div class="product-card d-flex justify-content-between">
     <div class="product-details">
       <h3><%= @product.title %></h3>
       <p><%= @product.brand %></p>
     </div>
-  </div>
-
-  <div class="results-content">
-    <% @product.product_packages.each do |item| %>
-      <div class="sorting-card">
-        <% if item.packaging.category == "carton" || "plastique" || "metal" %>
-        <div class="yellow">
-          <h3> <%= item.packaging.category.capitalize %></h3>
-          <p><%= item.packaging.instruction %></p>
-          <div class="image-bin"> <%= image_tag "JauneP.png", class: "yellow_bin" %></div>
-        </div>
-
-          <% else item.packaging.category == "verre" %>
-          <div class="green">
-            <h3> <%= item.packaging.category.capitalize %></h3>
-            <p><%= item.packaging.instruction %></p>
-            <div class="image-bin"><%= image_tag "VerteP.png", class: "glass_bin" %></div>
-        </div>
-
-        <% end %>
-      </div>
-    <% end %>
-  </div>
-
     <div class="add-favorites ml-3">
       <% @product.searches.each do |search| %>
         <div class="favorite-btn" data-star="<%= search.id %>">
@@ -38,4 +14,25 @@
         </div>
       <% end %>
     </div>
+  </div>
+
+  <div class="results-content">
+    <% @product.product_packages.each do |item| %>
+      <div class="sorting-card">
+        <% if item.packaging.category == "verre" %>
+          <div class="green">
+            <h3> <%= item.packaging.category.capitalize %></h3>
+            <p><%= item.packaging.instruction %></p>
+            <div class="image-bin"><%= image_tag "VerteP.png", class: "glass_bin" %></div>
+          </div>
+        <% else %>
+          <div class="yellow">
+            <h3> <%= item.packaging.category.capitalize %></h3>
+            <p><%= item.packaging.instruction %></p>
+            <div class="image-bin"> <%= image_tag "JauneP.png", class: "yellow_bin" %></div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>
