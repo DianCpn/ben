@@ -15,12 +15,12 @@
         <% if item.packaging.category == "carton" || "plastique" || "metal" %>
           <h3> <%= item.packaging.category.capitalize %></h3>
           <p><%= item.packaging.instruction %></p>
-          <div class="image-bin"> <%= image_tag "JauneP.png", class: "yellow_bin", width: 180 %></div>
+          <div class="image-bin"> <%= image_tag "JauneP.png", class: "yellow_bin" %></div>
 
         <% else item.packaging.category == "verre" %>
           <h3> <%= item.packaging.category.capitalize %></h3>
           <p><%= item.packaging.instruction %></p>
-          <div class="image-bin"><%= image_tag "VerteP.png", class: "glass_bin", width: 180 %></div>
+          <div class="image-bin"><%= image_tag "VerteP.png", class: "glass_bin" %></div>
         <% end %>
       </div>
     <% end %>
