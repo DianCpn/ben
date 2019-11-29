@@ -23,7 +23,7 @@
   <h2>Options :</h2>
     <div class="add-favorites ml-3">
       <% @product.searches.each do |search| %>
-        <div class="favorite-btn">
+        <div class="favorite-btn" data-star="<%= search.id %>">
           <%= render 'searches/yellow_star', search: search %>
         </div>
       <% end %>
