@@ -14,12 +14,13 @@
   padding: 10px;
   margin: 10px;
   margin-bottom: 10px;
+  margin-top: 50px;
   height: 110px;
 
   .product-details {
     padding-bottom: 10px;
     h3 {
-      color: $green;
+      color: $middle-gray;
       font-size: 24px;
       margin-left: 10px;
       margin-bottom: 0px;
@@ -68,7 +69,7 @@
   margin-top: 0;
   padding-top: 20px;
   padding-left: 10px;
-  background: linear-gradient(180deg, #FECB1D 0%, #FFE487 100%);
+  background: linear-gradient(180deg, #FCD71E 0%, #FFE487 100%);
   position: absolute;
   width: 100%;
   top: -23px;
