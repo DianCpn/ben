@@ -34,12 +34,19 @@ const fitMapToMarkers = (map, markers) => {
   map.fitBounds(bounds, { padding: 70, maxZoom: 15 });
 };
 
+const currentPosition = (map) => {
+  navigator.geolocation.getCurrentPosition((data) => {
+    const current = [{lat: data.coords.latitude, lng: data.coords.longitude}]
+    fitMapToMarkers(map, current);
+  });
+}
+
 const initMapbox = () => {
   if (mapElement) {
     const map = buildMap();
     const markers = JSON.parse(mapElement.dataset.markers);
     addMarkersToMap(map, markers);
-    fitMapToMarkers(map, markers);
+    currentPosition(map);
   }
 };
 

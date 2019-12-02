@@ -9,10 +9,8 @@ class ContainersController < ApplicationController
         image_url: helpers.asset_url('poubelle_tri3_verre.svg')
       }
     end
-
   end
 
   def create
-    ContainermapService.new()
   end
 end
