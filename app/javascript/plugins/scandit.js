@@ -10,11 +10,14 @@ const initScandit = () => {
 
     ScanditSDK.BarcodePicker.create(barcodeTrigger, {
       playSoundOnScan: false,
-      vibrateOnScan: true
+      vibrateOnScan: true,
+      guiStyle: ScanditSDK.BarcodePicker.GuiStyle.NONE,
     }).then(function(barcodePicker) {
       // barcodePicker is ready here to be used (rest of the tutorial code should go here)
       var scanSettings = new ScanditSDK.ScanSettings({
-      enabledSymbologies: ["ean8", "ean13", "upca", "upce", "code128", "code39", "code93", "itf"],
+      blurryRecognition: true,
+      gpuAcceleration: true,
+      enabledSymbologies: ["ean13"],
       codeDuplicateFilter: 1000
       });
       barcodePicker.applyScanSettings(scanSettings);
@@ -27,6 +30,13 @@ const initScandit = () => {
         console.log("found ean is ", ean);
         document.getElementById('product_upc').value = ean;
         document.getElementById("edit_account").submit();
+        // document.getElementById("edit_account")('#myModal').modal(options);
+        const modal = document.getElementById("edit_account")
+        const modalAdd = document.querySelector(".modal fade bd-example-modal-lg")
+        modal.addEventListener('click', (event) => {
+         modalAdd.element.insertAdjacentHTML(position, text);
+
+        })
       });
 
     });
