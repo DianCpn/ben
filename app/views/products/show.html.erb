@@ -1,7 +1,7 @@
 
 
 <div class="container">
-  <h2 class="localisation">Je trie à &nbsp;<i class="fas fa-map-marked-alt"></i> &nbsp; Paris 11ème </h2>
+  <!-- <h2 class="localisation">Je trie à &nbsp;<i class="fas fa-map-marked-alt"></i> &nbsp; Paris 11ème </h2> -->
   <div class="product-card d-flex justify-content-between">
     <div class="product-details">
       <h3><%= @product.title %></h3>
@@ -23,13 +23,13 @@
           <div class="green">
             <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
-            <div class="image-bin"><%= image_tag "VerteP.png", class: "glass_bin" %></div>
+            <div class="image-bin"><%= image_tag "poubelle_tri3_verre.svg", class: "glass_bin" %></div>
           </div>
         <% else %>
           <div class="yellow">
             <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
-            <div class="image-bin"> <%= image_tag "JauneP.png", class: "yellow_bin" %></div>
+            <div class="image-bin"> <%= image_tag "poubelle_tri3_jaune.svg", class: "yellow_bin" %></div>
           </div>
         <% end %>
       </div>
