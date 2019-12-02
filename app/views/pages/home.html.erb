@@ -1,26 +1,9 @@
 <div class="container-home">
-  <h1>TRIEZ avec BEN</h1>
-  <div class="image_buddies">
-    <%= image_tag "poubelle_tri3.svg", alt: "Poubelles", width: 300 %>
-  </div>
-  <div class="row-home">
-   <div class="yellow-squared-button col-6">
-      <%= link_to favorites_path do %>
-        <%= image_tag "star-full-white.svg", class: "favorite_btn"%>
-      <% end %>
-      <p>Favoris</p>
+
+    <div class="image_buddies">
+      <h1>BEN VOUS AIDE A TROUVER LA POUBELLE QU'IL FAUT</h1>
+      <%= image_tag "group-6.svg", alt: "Poubelles" %>
     </div>
-    <div class="grey-squared-button col-6">
-      <%= image_tag "loupe-full-white.svg", class: "search_btn"%>
-      <p>Recherche</p>
-    </div>
-    <div class= "green-long-button col-12">
-      <%= link_to new_search_path do %>
-        <%= image_tag "003-line-white.svg", class: "code-bar_btn" %>
-      <% end %>
-      <p>Scannez vos produits</p>
-    </div>
-  </div>
   </div>
 </div>
 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
