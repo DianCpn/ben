@@ -1,7 +1,7 @@
 
 <div id="scan">
   <div class="panel-body">
-    <div id='barcode-scanner'></div>
+    <div id="scandit-barcode-picker" data-api-key="<%= ENV["SCANDIT_KEY"] %>" style="max-width: 100vw; height: 100vh;"></div>
   </div>
   <%= render 'searches/form' %>
 </div>
@@ -9,11 +9,11 @@
 
 
 
-
-
-<!-- <script type="text/javascript" src="assets/js/libs/quagga.min.js"></script> -->
-<!-- <style>
-  #interactive.viewport {position: relative; width: 100%; height: auto; overflow: hidden; text-align: center;}
-  #interactive.viewport > canvas, #interactive.viewport > video {max-width: 100%;width: 100%;}
-  canvas.drawing, canvas.drawingBuffer {position: absolute; left: 0; top: 0;}
-</style> -->
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>

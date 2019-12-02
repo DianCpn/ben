@@ -26,10 +26,10 @@ User.destroy_all
 
 # -------------------------------------
 puts "seeding packaging ..."
-carton = Packaging.create(category: "carton", instruction: "A recycler dans la poubelle jaune")
-plastique = Packaging.create(category: "plastique", instruction: "A recycler dans la poubelle jaune")
-metal = Packaging.create(category: "metal", instruction: "A recycler dans la poubelle jaune")
-verre = Packaging.create(category: "verre", instruction: "A recycler dans la poubelle blanche")
+carton = Packaging.create(category: "carton", instruction: "A recycler dans la poubelle jaune", tip: "Les barquettes en carton se recyclent et se trient même souillées.")
+plastique = Packaging.create(category: "plastique", instruction: "A recycler dans la poubelle jaune", tip: "Les bouteilles en plastique doivent être aplaties dans leur longueur")
+metal = Packaging.create(category: "metal", instruction: "A recycler dans la poubelle jaune", tip: "Avec 9 boîtes de conserve recyclées, on fabrique 1 boule de pétanque")
+verre = Packaging.create(category: "verre", instruction: "A recycler dans la poubelle blanche", tip: "Tous les pots et bocaux en verre se recyclent et se trient bien vidés sans leur couvercle.")
 puts "packaging seeded!"
 
 puts "seeding products ..."

@@ -24,12 +24,14 @@
             <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
             <div class="image-bin"><%= image_tag "poubelle_tri3_verre.svg", class: "glass_bin" %></div>
+            <p><i class="far fa-clipboard">&nbsp;</i><%= item.packaging.tip %></p>
           </div>
         <% else %>
           <div class="yellow">
             <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
             <div class="image-bin"> <%= image_tag "poubelle_tri3_jaune.svg", class: "yellow_bin" %></div>
+            <p><i class="far fa-clipboard">&nbsp;</i><%= item.packaging.tip %></p>
           </div>
         <% end %>
       </div>
