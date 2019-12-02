@@ -24,6 +24,7 @@
             <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
             <div class="image-bin"><%= image_tag "poubelle_tri3_verre.svg", class: "glass_bin" %></div>
+            <p><%= item.packaging.tip %></p>
           </div>
         <% else %>
           <div class="yellow">
