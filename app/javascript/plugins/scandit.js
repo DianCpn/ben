@@ -10,7 +10,7 @@ const initScandit = () => {
 
     ScanditSDK.BarcodePicker.create(barcodeTrigger, {
       playSoundOnScan: false,
-      vibrateOnScan: true
+      // vibrateOnScan: true
     }).then(function(barcodePicker) {
       // barcodePicker is ready here to be used (rest of the tutorial code should go here)
       var scanSettings = new ScanditSDK.ScanSettings({
@@ -24,15 +24,29 @@ const initScandit = () => {
       barcodePicker.on("scan", function(scanResult) {
         // scanResult = {barcodes: [{symbology: "ean13", data: "34344456"}]}
         const ean = scanResult.barcodes[0].data
-        console.log("found ean is ", ean);
-        document.getElementById('product_upc').value = ean;
-        document.getElementById("edit_account").submit();
+        // on fait un fetch pour afficher la modal
+        fetch(
+          "/products",
+          {
+            method: "POST",
+            headers: {
+              'Content-Type': 'application/json',
+              'X-CSRF-Token': document.getElementById("authenticity-token").value
+            },
+            body: JSON.stringify({product: {upc: ean}})
+          }
+        ).then(response => response.json()).
+          then(data => {
+            document.
+              getElementById("scan-result-modal-placeholder").
+              innerHTML = data.modal_html;
+            $("#scan-result").modal();
+          })
       });
 
     });
   }
-
-
 }
 
 export { initScandit }
+
