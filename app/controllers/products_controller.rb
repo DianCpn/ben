@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
       else
         @search
       end
-      redirect_to product_path(@product)
+      # redirect_to product_path(@product)
     else
       @search = Search.new
       @search.user = current_user
@@ -61,9 +61,13 @@ class ProductsController < ApplicationController
         @product.package_array.each do |item|
           product_package = ProductPackage.create!(product: @product, packaging: Packaging.find_by(category: item))
         end
-        redirect_to product_path(@product)
+        # redirect_to product_path(@product)
       end
     end
+    render json: {
+      product: @product,
+      modal_html: render_to_string(partial: "searches/scan_result")
+    }
   end
 
   private

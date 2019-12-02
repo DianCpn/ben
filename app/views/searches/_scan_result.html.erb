@@ -1,0 +1,28 @@
+<div class="modal fade" id="scan-result" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <%= @product.title %>
+      <% @product.product_packages.each do |product_package| %>
+        <% if product_package.packaging.category == "verre" %>
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fas fa-circle", style="color: green"></i>&nbsp;<%= product_package.packaging.category.capitalize %></h5>
+        </div>
+        <div class="modal-body">
+          <%= product_package.packaging.instruction %>
+        </div>
+        <% else %>
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="fas fa-circle", style="color: yellow"></i>&nbsp;<%= product_package.packaging.category.capitalize %></h5>
+        </div>
+        <div class="modal-body">
+          <%= product_package.packaging.instruction %>
+        </div>
+        <% end %>
+      <% end %>
+      <div class="modal-footer">
+        <%= link_to "Voir plus", product_path(@product) %>
+        <!-- <button type="button" class="btn btn-primary"></button> -->
+      </div>
+    </div>
+  </div>
+</div>

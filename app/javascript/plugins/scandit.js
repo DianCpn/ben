@@ -27,22 +27,28 @@ const initScandit = () => {
       barcodePicker.on("scan", function(scanResult) {
         // scanResult = {barcodes: [{symbology: "ean13", data: "34344456"}]}
         const ean = scanResult.barcodes[0].data
-        console.log("found ean is ", ean);
-        document.getElementById('product_upc').value = ean;
-        document.getElementById("edit_account").submit();
-        // document.getElementById("edit_account")('#myModal').modal(options);
-        const modal = document.getElementById("edit_account")
-        const modalAdd = document.querySelector(".modal fade bd-example-modal-lg")
-        modal.addEventListener('click', (event) => {
-         modalAdd.element.insertAdjacentHTML(position, text);
-
-        })
+        // on fait un fetch pour afficher la modal
+        fetch(
+          "/products",
+          {
+            method: "POST",
+            headers: {
+              'Content-Type': 'application/json',
+              'X-CSRF-Token': document.getElementById("authenticity-token").value
+            },
+            body: JSON.stringify({product: {upc: ean}})
+          }
+        ).then(response => response.json()).
+          then(data => {
+            document.
+              getElementById("scan-result-modal-placeholder").
+              innerHTML = data.modal_html;
+            $("#scan-result").modal();
+          })   
       });
-
     });
   }
-
-
 }
 
 export { initScandit }
+
