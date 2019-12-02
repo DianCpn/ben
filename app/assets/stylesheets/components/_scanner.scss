@@ -18,3 +18,16 @@
 .sticky-footer, #scan, .panel-body, #barcode-scanner {
   height: 100vh;
 }
+
+#scandit-barcode-picker {
+  height: 100vh;
+}
+
+.scandit.scandit-barcode-picker {
+  height: 100vh !important;
+  max-height: inherit !important;
+}
+
+video.scandit-video.mirrored {
+  object-fit: cover !important;
+}

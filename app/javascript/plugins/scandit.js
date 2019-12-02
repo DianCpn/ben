@@ -10,11 +10,14 @@ const initScandit = () => {
 
     ScanditSDK.BarcodePicker.create(barcodeTrigger, {
       playSoundOnScan: false,
-      // vibrateOnScan: true
+      vibrateOnScan: true,
+      guiStyle: ScanditSDK.BarcodePicker.GuiStyle.NONE,
     }).then(function(barcodePicker) {
       // barcodePicker is ready here to be used (rest of the tutorial code should go here)
       var scanSettings = new ScanditSDK.ScanSettings({
-      enabledSymbologies: ["ean8", "ean13", "upca", "upce", "code128", "code39", "code93", "itf"],
+      blurryRecognition: true,
+      gpuAcceleration: true,
+      enabledSymbologies: ["ean13"],
       codeDuplicateFilter: 1000
       });
       barcodePicker.applyScanSettings(scanSettings);
@@ -41,9 +44,8 @@ const initScandit = () => {
               getElementById("scan-result-modal-placeholder").
               innerHTML = data.modal_html;
             $("#scan-result").modal();
-          })
+          })   
       });
-
     });
   }
 }

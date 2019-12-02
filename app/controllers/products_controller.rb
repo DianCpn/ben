@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
 # evian : 3068320120256
 
   def create
-        @product = Product.new(product_params)
+    @product = Product.new(product_params)
     if Product.find_by(upc: "#{product_params[:upc]}")
       @product = Product.find_by(upc: "#{product_params[:upc]}")
       @search = Search.find_by(product: @product)

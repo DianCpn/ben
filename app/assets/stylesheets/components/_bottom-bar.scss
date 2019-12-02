@@ -14,11 +14,9 @@
 
 
 .bottom-bar-home {
-  // background: $light-gray;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  // height: 10px;
   color: rgba(0,0,0,0.3);
   width: 100%;
   height: 100px;
@@ -28,45 +26,34 @@
 
 .bottom-bar-links{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
-  // border: #07B184 2px solid ;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 4px;
   background-color: $light-gray;
   padding-right: 30px;
   padding-left: 30px;
   height: 65px;
+  .center{
+    width: 3px;
+    color: #A8A9AD;
+    padding-top: 10px;
+  }
+
+
 }
 
 .bottom-bar-links-home{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  // border: #07B184 2px solid ;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 4px;
-  // background-color: $light-gray;
   padding-right: 30px;
   padding-left: 30px;
   height: 65px;
 }
 
-// .bottom_bar a {
-//   color: black;
-//   opacity: 0.15;
-//   text-decoration: none;
-//   font-size: 24px;
-//   padding: 0px 10px;
-// }
-// .bottom_bar a:hover {
-//   opacity: 1;
-// }
-.favorite_btn{
-  width: 30px;
-  margin-top: 15px;
 
-}
 .code-bar_container{
   position: relative;
   width: 70px;
@@ -75,33 +62,53 @@
     width: 65px;
     height:65px;
     border-radius: 50%;
-    background-color: #07B184;
+    background: linear-gradient(180deg, #07B184 0%, #0ff6b8 100%);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     box-shadow: 0px 4px 3px  rgba(0,0,0,0.4);
 
   }
 }
 .code-bar_btn{
-  width: 40px;
+  width: 35px;
   color: white;
 
 }
-.search_btn{
-  width: 30px;
-  margin-top: 15px;
+
+.favorites{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    color: #A8A9AD;
+    font-size: 12px;
+    }
+  .favorite_btn{
+    width: 20px;
+    margin-top: 15px;
+  }
+
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    color: #A8A9AD;
+    font-size: 12px;
+    }
+  .search_btn{
+    width: 20px;
+    margin-top: 15px;
+  }
 
 }
 
 
 
-// @media (max-width: 320px) {
-//   /* For a screen < 320px, this CSS will be read */
-//   .container {
-//     width: 200px;
-//   }
-// // }
+
