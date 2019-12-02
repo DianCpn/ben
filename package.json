@@ -6,7 +6,8 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
-    "quagga": "^0.12.1"
+    "quagga": "^0.12.1",
+    "scandit-sdk": "^4.6.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.9.0"
