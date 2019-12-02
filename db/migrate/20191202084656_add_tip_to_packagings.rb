@@ -1,5 +1,5 @@
 class AddTipToPackagings < ActiveRecord::Migration[5.2]
   def change
-    add_column :packagins, :tip, :string
+    add_column :packagings, :tip, :string
   end
 end
