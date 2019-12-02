@@ -4,12 +4,6 @@ body {
   background-color: #F4F4F4;
 }
 
-h1 {
-  color: #535456;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 30px;
-}
 
 .container-home {
   min-height: 100vh;
@@ -25,29 +19,17 @@ h1 {
 
   .image_buddies {
     display: block;
-    margin: 30px auto;
-    margin-top: 0;
-  }
-  .row-home {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    margin-right: -15px;
-    margin-left: -15px;
-
-    .yellow-squared-button {
-      background-color: #FECB1D;
-      text-align: center;
-      padding: 30px 20px 20px 20px;
+    h1 {
+      color: #535456;
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 30px;
+      width: 80%;
     }
-    .grey-squared-button {
-      background-color: #A8A9AD;
-      text-align: center;
-      padding: 30px 20px 20px 20px;
-    }
-    .green-long-button {
-      background-color: #07B184;
-      text-align: center;
-      padding: 30px 20px 20px 20px;
+    img{
+      position: relative;
+    top: -45px;
+    z-index: -1;
     }
   }
 }
