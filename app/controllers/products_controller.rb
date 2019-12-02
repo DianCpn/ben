@@ -14,14 +14,13 @@ class ProductsController < ApplicationController
 # evian : 3068320120256
 
   def create
-    @product = Product.new(product_params)
-    @base_product = Product.find_by(upc: "#{product_params[:upc]}")
-    @user = current_user
-    if @base_product.present?
-      @product = @base_product
-      @search = Search.find_by(product_id: @product.id)
+        @product = Product.new(product_params)
+    if Product.find_by(upc: "#{product_params[:upc]}")
+      @product = Product.find_by(upc: "#{product_params[:upc]}")
+      @search = Search.find_by(product: @product)
       if @search.nil?
-        @search = Search.new(product_id: @product.id, user_id: @user.id)
+        @search = Search.new(product: @product, user: current_user)
+        # raise
         @search.save
       else
         @search
@@ -29,7 +28,7 @@ class ProductsController < ApplicationController
       redirect_to product_path(@product)
     else
       @search = Search.new
-      @search.user = @user
+      @search.user = current_user
       response = OpenfoodfactsService.new(product_params[:upc]).call
       if response.parsed_response["status_verbose"] == "product not found"
         render "searches/new"
