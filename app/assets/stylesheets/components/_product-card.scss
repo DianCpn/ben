@@ -43,11 +43,14 @@
       font-size: 14px;
     }
 
-  .image-bin{
-    img {
-      width: 105px;
+  .image-bin {
+      width: 120px;
       position: absolute;
-      top: 65px;
+      top: 70px;
+      left: -7px;
+    }
+    .yellow-bin {
+      height: 10em;
     }
   }
 

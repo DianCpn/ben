@@ -218,10 +218,19 @@ maille_moutarde_a_lancienne = Product.new(
   brand: "Maille",
   title: "Moutarde à l'ancienne",
   upc: "3036810207800",
-  package_array: ["verre"]
+  package_array: ["verre", "metal"]
 )
 maille_moutarde_a_lancienne.save
 puts 'maille_moutarde_a_lancienne created!'
+
+tablette_chocolat_noir = Product.new(
+  brand: "Villars",
+  title: "Chocolat noir",
+  upc: "7610036012507",
+  package_array: ["metal", "carton"]
+)
+tablette_chocolat_noir.save
+puts 'tablette_chocolat_noir created!'
 puts 'products seeded!'
 
 puts "seeding product packages .."
@@ -246,6 +255,8 @@ ProductPackage.create(product: maille_velours_de_vinaigre_balsamique, packaging:
 ProductPackage.create(product: maille_velours_de_vinaigre_balsamique, packaging: metal)
 ProductPackage.create(product: maille_moutarde_a_lancienne, packaging: verre)
 ProductPackage.create(product: maille_moutarde_a_lancienne, packaging: metal)
+ProductPackage.create(product: tablette_chocolat_noir, packaging: metal)
+ProductPackage.create(product: tablette_chocolat_noir, packaging: carton)
 puts "product packages done!"
 
 
