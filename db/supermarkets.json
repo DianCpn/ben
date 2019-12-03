@@ -1,0 +1,110 @@
+
+"features": [
+    {
+      "attributes": {
+        "Name": "TABAC LES COURTILLES",
+        "Match_addr": "160 rue Oberkampf, 75011 Paris",
+        "secteur": "PARIS 11 ",
+        "horaires": ""
+      },
+      "geometry": {
+        "x": 2.38239,
+        "y": 48.8668
+      }
+    },
+    {
+      "attributes": {
+        "Name": "CARREFOUR EXPRESS PARIS REPUBLIQUE",
+        "Match_addr": "59 avenue de la République, 75011 Paris",
+        "secteur": "PARIS 11 ",
+        "horaires": "8h 22h"
+      },
+      "geometry": {
+        "x": 2.37832,
+        "y": 48.8647
+      }
+    },
+    {
+      "attributes": {
+        "Name": "REXEL MENILMONTANT",
+        "Match_addr": "99 avenue de la République, 75011 Paris",
+        "secteur": "PARIS 11 ",
+        "horaires": ""
+      },
+      "geometry": {
+        "x": 2.38318,
+        "y": 48.8638
+      }
+    },
+    {
+      "attributes": {
+        "Name": "CARREFOUR CITY PARIS PARMENTIER",
+        "Match_addr": "39 avenue Parmentier, 75011 Paris",
+        "secteur": "PARIS 11 ",
+        "horaires": "7h-22h"
+      },
+      "geometry": {
+        "x": 2.37648,
+        "y": 48.8624
+      }
+    },
+    {
+      "attributes": {
+        "Name": "MONOP SAINT AMBROISE",
+        "Match_addr": "42 rue Saint Maur, 75011 Paris",
+        "secteur": "PARIS 11 ",
+        "horaires": "08h30-00h"
+      },
+      "geometry": {
+        "x": 2.38054,
+        "y": 48.8619
+      }
+    },
+    {
+      "attributes": {
+        "Name": "OFFICE DEPOT PARIS MAGENTA",
+        "Match_addr": "60 boulevard de Magenta, 75010 Paris",
+        "secteur": "PARIS 10 ",
+        "horaires": "9h-19h3b0"
+      },
+      "geometry": {
+        "x": 2.35867,
+        "y": 48.8737
+      }
+    },
+    {
+      "attributes": {
+        "Name": "CARREFOUR CITY PARIS SAMPAIX",
+        "Match_addr": "7 rue Lucien Sampaix, 75010 Paris",
+        "secteur": "PARIS 10 ",
+        "horaires": ""
+      },
+      "geometry": {
+        "x": 2.35985,
+        "y": 48.8711
+      }
+    },
+    {
+      "attributes": {
+        "Name": "REPORTAGE IMAGE",
+        "Match_addr": "8 place Jacques Bonsergent, 75010 Paris",
+        "secteur": "PARIS 10 ",
+        "horaires": ""
+      },
+      "geometry": {
+        "x": 2.36112,
+        "y": 48.8711
+      }
+    },
+    {
+      "attributes": {
+        "Name": "REPORTAGE IMAGE",
+        "Match_addr": "71 boulevard de Magenta, 75010 Paris",
+        "secteur": "PARIS 10 ",
+        "horaires": ""
+      },
+      "geometry": {
+        "x": 2.35676,
+        "y": 48.8752
+      }
+    }]
