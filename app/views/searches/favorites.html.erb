@@ -7,7 +7,7 @@
           <% if item.packaging.category == "verre" %>
             <div class="verre">
               <div class="favorite-title">
-                <h2><%= favorite.product.title %></h2>
+                <h2><%= link_to "#{favorite.product.title}", product_path(favorite.product) %></h2>
                 <div class="favorite-btn" data-star="<%= favorite.id %>">
                 <%= render 'searches/yellow_star', search: favorite %>
                 </div>
@@ -18,7 +18,7 @@
           <% else %>
             <div class="jaune">
               <div class="favorite-title">
-                <h2><%= favorite.product.title %></h2>
+                <h2><%= link_to "#{favorite.product.title}", product_path(favorite.product) %></h2>
                 <div class="favorite-btn" data-star="<%= favorite.id %>">
                 <%= render 'searches/yellow_star', search: favorite %>
                 </div>
