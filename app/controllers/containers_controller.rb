@@ -1,10 +1,6 @@
 class ContainersController < ApplicationController
   def index
-    if params[:search]
-      @containers = Container.where("lower(material) LIKE lower(?)", "%#{params[:search]}%")
-    else
-      @containers = Container.all
-    end
+    @containers = Container.where(material: "verre")
     @markers = @containers.map do |container|
       {
         lat: container.latitude,
@@ -18,6 +14,18 @@ class ContainersController < ApplicationController
   def create
   end
 
-  def find
+  def result
+    @containers = Container.where("lower(material) LIKE lower(?)", "pile")
+    @markers = @containers.map do |container|
+      {
+        lat: container.latitude,
+        lng: container.longitude,
+        infoWindow: render_to_string(partial: "info_window_pile", locals: { container: container }),
+        image_url: helpers.asset_url('loupe-green.svg')
+      }
+    end
+  end
+
+  def tip
   end
 end
