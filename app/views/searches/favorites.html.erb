@@ -1,23 +1,37 @@
 <div class="container">
-  <h1>Favoris</h1>
+  <h1>Mes favoris</h1>
   <% @favorites.each do |favorite| %>
     <div class="card-favorite d-flex justify-content-between">
       <div class="favorite-text">
-        <h2><%= favorite.product.title %></h2>
-        <p><%= favorite.product.brand %></p>
         <% favorite.product.product_packages.each do |item| %>
           <% if item.packaging.category == "verre" %>
-            <p><i class="fas fa-trash" style='color:#3f96c1;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></p>
+            <div class="verre">
+              <div class="favorite-title">
+                <h2><%= favorite.product.title %></h2>
+                <div class="favorite-btn" data-star="<%= favorite.id %>">
+                <%= render 'searches/yellow_star', search: favorite %>
+                </div>
+              </div>
+              <p><%= favorite.product.brand %></p>
+              <p><i class="fas fa-circle" style='color:#6DC084;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></p>
+            </div>
           <% else %>
-            <p><i class="fas fa-trash" style='color:#FECB1D;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></p>
+            <div class="jaune">
+              <div class="favorite-title">
+                <h2><%= favorite.product.title %></h2>
+                <div class="favorite-btn" data-star="<%= favorite.id %>">
+                <%= render 'searches/yellow_star', search: favorite %>
+                </div>
+              </div>
+              <p><%= favorite.product.brand %></p>
+              <p><i class="fas fa-circle" style='color:#FECB1D;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></p>
+            </div>
           <% end %>
         <% end %>
-      </div>
-      <div class="favorite-btn" data-star="<%= favorite.id %>">
-        <%= render 'searches/yellow_star', search: favorite %>
       </div>
     </div>
   <% end %>
 </div>
+
 
 
