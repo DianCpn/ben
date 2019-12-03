@@ -8,7 +8,7 @@ class ContainersController < ApplicationController
         lat: container.latitude,
         lng: container.longitude,
         infoWindow: render_to_string(partial: "info_window", locals: { container: container }),
-        image_url: helpers.asset_url('poubelle_tri3_verre.svg')
+        image_url: helpers.asset_url('green-point.svg')
       }
     end
   end
@@ -23,7 +23,7 @@ class ContainersController < ApplicationController
         lat: container.latitude,
         lng: container.longitude,
         infoWindow: render_to_string(partial: "info_window_pile", locals: { container: container }),
-        image_url: helpers.asset_url('loupe-green.svg')
+        image_url: helpers.asset_url('blue-point.svg')
       }
     end
   end

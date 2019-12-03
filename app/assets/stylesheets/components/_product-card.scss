@@ -8,7 +8,7 @@
       font-size: 30px;
       margin-bottom: 0px;
       font-weight: normal;
-      width: 120%;
+      width: 108%;
     }
     p {
       color: #535456;
@@ -17,6 +17,10 @@
       font-size: 18px;
     }
   }
+}
+
+.results-content {
+  margin-bottom: 120px;
 }
 
 .sorting-card {
@@ -49,18 +53,17 @@
       top: 70px;
       left: -7px;
     }
-    .yellow-bin {
+    .yellow_bin {
       height: 10em;
     }
   }
 
-  .tip{
+.tip {
     background-color: #E8E8E8;
     border-radius: 5px;
-    padding: 18px;
-    margin-left: -36px;
+    padding: 18px 15px 18px 22px;
+    margin-left: -41px;
   }
-}
 
 .current-position-btn {
   background: linear-gradient(105.8deg, #73CC89 0%, #3F6F60 100%);
