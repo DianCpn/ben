@@ -1,5 +1,5 @@
-
-"features": [
+{
+  "features": [
     {
       "attributes": {
         "Name": "TABAC LES COURTILLES",
@@ -107,4 +107,6 @@
         "x": 2.35676,
         "y": 48.8752
       }
-    }]
+    }
+  ]
+}
