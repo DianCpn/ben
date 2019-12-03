@@ -1,6 +1,9 @@
-<h1>Votre recherche</h1>
-
-<%= form_tag(containers_path, method: "get", class: "") do %>
-<%= text_field_tag(:search, params[:search], placeholder: "Quel type d'objet à trier ?", class: "", id:"") %>
-<%= submit_tag 'Recherche', class: "" %>
-<% end %>
+<div class="container">
+  <h1>Votre recherche</h1>
+  <div class="card-favorite d-flex justify-content-between">
+    <%= form_tag(containers_path, method: "get", class: "center-content") do %>
+    <%= text_field_tag(:search, params[:search], placeholder: "Quel type d'objet à trier ?", class: "", id:"") %>
+    <%= submit_tag 'Recherche', class: "" %>
+    <% end %>
+  </div>
+</div>
