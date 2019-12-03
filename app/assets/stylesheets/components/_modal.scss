@@ -4,6 +4,12 @@
 
   .modal-content {
     border-radius: 10px;
+    background-color: #F4F4F4;
+    width: 100%;
+    margin-block-start: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
     .modal-header {
       display: flex;
       align-items: flex-start;
@@ -24,7 +30,7 @@
       flex-direction: column;
       width: 100%;
       pointer-events: auto;
-      background-color: #fff;
+      background-color: #F4F4F4;
       background-clip: padding-box;
       padding: 6px;
       outline: 0;
@@ -47,6 +53,6 @@
     background-color: transparent;
     display: flex;
     flex: auto;
-    margin-left: 2rem;
+    margin-left: 40px;
   }
 }

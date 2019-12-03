@@ -4,14 +4,14 @@
       <% @product.product_packages.each do |product_package| %>
         <% if product_package.packaging.category == "verre" %>
         <div class="modal-header border-0">
-          <h5 class="modal-title"><i class="fas fa-circle", style="color: #A8A9AD"></i>&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h5>
+          <h4 class="modal-title"><i class="fas fa-circle", style="color: #A8A9AD"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
         </div>
         <div class="modal-body", style="align-self: center">
           <%= product_package.packaging.instruction %>
         </div>
         <% else %>
         <div class="modal-header border-0">
-          <h5 class="modal-title"><i class="fas fa-circle", style="color: yellow"></i>&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h5>
+          <h4 class="modal-title"><i class="fas fa-circle", style="color: yellow"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
         </div>
         <div class="modal-body", style="align-self: center">
           <%= product_package.packaging.instruction %>
