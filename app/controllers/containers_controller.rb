@@ -1,4 +1,6 @@
 class ContainersController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def index
     @containers = Container.where(material: "verre")
     @markers = @containers.map do |container|
