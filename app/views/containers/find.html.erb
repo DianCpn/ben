@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container question">
   <h1>Que voulez vous trier ?</h1>
   <br>
   <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
     <%= form_tag(find_tip_path, method: "get", class: "input-group") do %>
-    <%= text_field_tag(:search, params[:search], placeholder: "Quel type d'objet à trier ?", class: "form-control border-0 bg-light") %>
+    <%= text_field_tag(:search, params[:search], placeholder: "Entrer un objet à trier", class: "form-control border-0 bg-light") %>
       <div class="input-group-append">
         <%#= submit_tag 'Rec', class: "btn btn-link text-success" do %>
           <!-- <i class="fa fa-search"></i> -->
