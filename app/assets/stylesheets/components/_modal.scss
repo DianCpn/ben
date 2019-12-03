@@ -1,40 +1,60 @@
+.modal.fade .modal-dialog {
+  transition: transform .3s ease-out;
+  transform: translate(0,-25%);
+}
 .modal {
   display: flex;
   flex-flow: column;
 
-  .modal-content {
-    border-radius: 10px;
-    background-color: #F4F4F4;
-    width: 100%;
-    margin-block-start: 15rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-    .modal-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      padding: 1rem 1rem;
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-
-      .modal-title {
-        margin-bottom: 0;
-        margin-left: 5px;
-        line-height: 1.5;
-      }
+  .modal-dialog-centered {
+    .modal-window {
+      width: 90vw;
     }
-    .modal-body {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      pointer-events: auto;
-      background-color: #F4F4F4;
-      background-clip: padding-box;
-      padding: 6px;
-      outline: 0;
+    .modal-content {
       text-align: center;
+      border-radius: 10px;
+      background-color: #F4F4F4;
+      width: 100%;
+      margin-block-start: 15rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      .close {
+        float: right;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .5;
+      }
+
+      .modal-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+
+        .modal-title {
+          margin-bottom: 0;
+          margin-left: 5px;
+          line-height: 1.5;
+          color: #535456;
+        }
+      }
+      .modal-body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #F4F4F4;
+        background-clip: padding-box;
+        padding: 6px;
+        outline: 0;
+        text-align: left;
+        padding: 6px 16px 6px 56px;
+      }
     }
   }
 }
@@ -43,16 +63,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
+  padding: 0.5rem 1rem 1rem 3.5rem;
 
   & > a {
-    color: #002E49 !important;
+    color: #535456 !important;
     text-decoration: none;
     background-color: transparent;
     display: flex;
     flex: auto;
-    margin-left: 40px;
+    margin-left: 24ppx;
   }
 }

@@ -214,14 +214,14 @@ maille_velours_de_vinaigre_balsamique.save
 puts 'maille_velours_de_vinaigre_balsamique created!'
 
 
-maille_vinaigre_de_xeres = Product.new(
+maille_moutarde_a_lancienne = Product.new(
   brand: "Maille",
-  title: "Vinaigre de Xeres",
-  upc: "3036810230464",
+  title: "Moutarde à l'ancienne",
+  upc: "3036810207800",
   package_array: ["verre"]
 )
-maille_vinaigre_de_xeres.save
-puts 'maille_vinaigre_de_xeres created!'
+maille_moutarde_a_lancienne.save
+puts 'maille_moutarde_a_lancienne created!'
 puts 'products seeded!'
 
 puts "seeding product packages .."
@@ -243,7 +243,9 @@ ProductPackage.create(product: casino_sirop_de_peche, packaging: metal)
 ProductPackage.create(product: tetley_the_noir_anglais, packaging: carton)
 ProductPackage.create(product: knorr_soupe_bio_potiron_carottes, packaging: carton)
 ProductPackage.create(product: maille_velours_de_vinaigre_balsamique, packaging: verre)
-ProductPackage.create(product: maille_vinaigre_de_xeres, packaging: verre)
+ProductPackage.create(product: maille_velours_de_vinaigre_balsamique, packaging: metal)
+ProductPackage.create(product: maille_moutarde_a_lancienne, packaging: verre)
+ProductPackage.create(product: maille_moutarde_a_lancienne, packaging: metal)
 puts "product packages done!"
 
 
