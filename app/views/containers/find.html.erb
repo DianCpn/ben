@@ -1,5 +1,6 @@
 <h1>Votre recherche</h1>
 
-<%= form_tag(containers_path, method: "get", class: "Banner__form") do %>
-<%= text_field_tag(:search, params[:search], placeholder: "Quel type d'objet à trier ?", class: "Input Banner__input form-control", id:" ") %>
+<%= form_tag(containers_path, method: "get", class: "") do %>
+<%= text_field_tag(:search, params[:search], placeholder: "Quel type d'objet à trier ?", class: "", id:"") %>
+<%= submit_tag 'Recherche', class: "" %>
 <% end %>

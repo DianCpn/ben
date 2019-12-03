@@ -1,6 +1,10 @@
 class ContainersController < ApplicationController
   def index
-    @containers = Container.all #returns flats with coordinates
+    if params[:search]
+      @containers = Container.where(material: "#{params[:search]}")
+    else
+      @containers = Container.all
+    end
     @markers = @containers.map do |container|
       {
         lat: container.latitude,
@@ -15,6 +19,5 @@ class ContainersController < ApplicationController
   end
 
   def find
-
   end
 end
