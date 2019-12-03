@@ -21,18 +21,24 @@
       <div class="sorting-card">
         <% if item.packaging.category == "verre" %>
           <div class="green">
-            <h3> <%= item.packaging.category.capitalize %></h3>
+            <div class="category">
+              <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
-            <div class="image-bin"><%= image_tag "poubelle_tri3_verre.svg", class: "glass_bin" %></div>
-            <p><i class="fas fa-lightbulb">&nbsp;</i><%= item.packaging.tip %></p>
-            <p class="current-position-btn"><i class='fas fa-map-marker-alt'></i> <%= link_to "Trouver un conteneur en verre près de chez moi".html_safe, containers_path %></p>
+            <p><i class="fas fa-lightbulb", style="color: #6DC084">&nbsp;</i><%= item.packaging.tip %></p>
+            </div>
+              <div class="image-glass"><%= image_tag "GroupVerre.svg", class: "glass_bin" %></div>
+            <div class=button-glass>
+              <div class="current-position-btn"><i class='fas fa-map-marker-alt', style="color: white"></i> <%= link_to "Trouver un conteneur Verre ".html_safe, containers_path %></div>
+            </div>
           </div>
         <% else %>
           <div class="yellow">
-            <h3> <%= item.packaging.category.capitalize %></h3>
+            <div class="category">
+              <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
-            <div class="image-bin"> <%= image_tag "poubelle_tri3_jaune.svg", class: "yellow_bin" %></div>
-            <p><i class="fas fa-lightbulb">&nbsp;</i><%= item.packaging.tip %></p>
+            <p><i class="fas fa-lightbulb", style="color: #FECB1D">&nbsp;</i><%= item.packaging.tip %></p>
+            </div>
+            <div class="image-bin"> <%= image_tag "GroupJaune.svg", class: "yellow_bin" %></div>
           </div>
         <% end %>
       </div>
