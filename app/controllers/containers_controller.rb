@@ -1,4 +1,6 @@
 class ContainersController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def index
     if params[:search]
       @containers = Container.where("lower(material) LIKE lower(?)", "%#{params[:search]}%")
