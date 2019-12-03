@@ -1,27 +1,25 @@
-<div class="modal fade" id="scan-result" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="scan-result">
+  <div class="modal-dialog-centered modal-sm">
     <div class="modal-content">
-      <%= @product.title %>
       <% @product.product_packages.each do |product_package| %>
         <% if product_package.packaging.category == "verre" %>
-        <div class="modal-header">
-          <h5 class="modal-title"><i class="fas fa-circle", style="color: green"></i>&nbsp;<%= product_package.packaging.category.capitalize %></h5>
+        <div class="modal-header border-0">
+          <h5 class="modal-title"><i class="fas fa-circle", style="color: #A8A9AD"></i>&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h5>
         </div>
-        <div class="modal-body">
+        <div class="modal-body", style="align-self: center">
           <%= product_package.packaging.instruction %>
         </div>
         <% else %>
-        <div class="modal-header">
-          <h5 class="modal-title"><i class="fas fa-circle", style="color: yellow"></i>&nbsp;<%= product_package.packaging.category.capitalize %></h5>
+        <div class="modal-header border-0">
+          <h5 class="modal-title"><i class="fas fa-circle", style="color: yellow"></i>&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h5>
         </div>
-        <div class="modal-body">
+        <div class="modal-body", style="align-self: center">
           <%= product_package.packaging.instruction %>
         </div>
         <% end %>
       <% end %>
-      <div class="modal-footer">
-        <%= link_to "Voir plus", product_path(@product) %>
-        <!-- <button type="button" class="btn btn-primary"></button> -->
+      <div class="modal-footer border-0">
+        <%= link_to "> Voir plus", product_path(@product) %>
       </div>
     </div>
   </div>
