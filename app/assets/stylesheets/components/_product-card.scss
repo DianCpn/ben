@@ -1,20 +1,20 @@
 .product-card {
-  margin: 35px 10px 10px 10px;
+  margin: 35px 10px 0px 10px;
 
   .product-details {
     padding-bottom: 10px;
     h3 {
       color: #535456;
       font-size: 30px;
-      margin-left: 10px;
       margin-bottom: 0px;
       font-weight: normal;
+      width: 120%;
     }
     p {
       color: #535456;
-      margin-left: 10px;
       margin-bottom: 5px;
-      margin-top: 10px;
+      margin-top: 5px;
+      font-size: 18px;
     }
   }
 }
@@ -32,7 +32,7 @@
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       margin-top: 10px;
       color: #535456;
     }
@@ -53,6 +53,14 @@
       height: 10em;
     }
   }
+
+  .tip{
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    padding: 18px;
+    margin-left: -36px;
+  }
+}
 
 .current-position-btn {
   background: linear-gradient(105.8deg, #73CC89 0%, #3F6F60 100%);
@@ -95,6 +103,16 @@
 .image-glass {
   width: 120px;
   position: absolute;
-  top: 65px;
+  top: 70px;
+  left: -7px;
+
+  .glass_bin {
+    height: 10em;
+  }
+}
+
+.favorite-btn .fas .fa-star {
+  margin-top: 2px;
+  font-size: 1.5em;
 }
 

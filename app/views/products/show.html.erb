@@ -4,7 +4,7 @@
   <!-- <h2 class="localisation">Je trie à &nbsp;<i class="fas fa-map-marked-alt"></i> &nbsp; Paris 11ème </h2> -->
   <div class="product-card d-flex justify-content-between">
     <div class="product-details">
-      <h3><%= @product.title %></h3>
+      <h3><%= @product.title.downcase.capitalize %></h3>
       <p><%= @product.brand %></p>
     </div>
     <div class="add-favorites ml-3">
@@ -24,7 +24,7 @@
             <div class="category">
               <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
-            <p><i class="fas fa-lightbulb", style="color: #6DC084">&nbsp;</i><%= item.packaging.tip %></p>
+            <p class="tip"><i class="fas fa-lightbulb", style="color: #6DC084">&nbsp;</i><%= item.packaging.tip %></p>
             </div>
               <div class="image-glass"><%= image_tag "GroupVerre.svg", class: "glass_bin" %></div>
             <div class=button-glass>
@@ -36,7 +36,7 @@
             <div class="category">
               <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
-            <p><i class="fas fa-lightbulb", style="color: #FECB1D">&nbsp;</i><%= item.packaging.tip %></p>
+            <p class="tip"><i class="fas fa-lightbulb", style="color: #FECB1D">&nbsp;</i><%= item.packaging.tip %></p>
             </div>
             <div class="image-bin"> <%= image_tag "GroupJaune.svg", class: "yellow_bin" %></div>
           </div>
