@@ -16,6 +16,7 @@ Packaging.destroy_all
 Product.destroy_all
 Search.destroy_all
 User.destroy_all
+Container.destroy_all
 
 # Add photo.purge to destroy photos in cloudinary ?
 
@@ -246,6 +247,32 @@ ProductPackage.create(product: maille_vinaigre_de_xeres, packaging: verre)
 puts "product packages done!"
 
 
+puts "creating verre containers"
+
+#filepath = './db/containers.json'
+filepath = File.join(Rails.root, 'db', 'containers.json')
+
+serialized_containers = File.read(filepath)
+
+containers = JSON.parse(serialized_containers)
 
 
+containers["features"].each do |container|
+  Container.create(address: "#{container["attributes"]["Match_addr"]}", sector: "#{container["attributes"]["secteur"]}", latitude: "#{container["geometry"]["y"]}", longitude:"#{container["geometry"]["x"]}", material: "verre")
+end
+
+# puts "creating pile containers"
+
+# filepath = File.join(Rails.root, 'db', 'supermarkets.json')
+
+# serialized_containers = File.read(filepath)
+
+# containers = JSON.parse(serialized_containers)
+
+
+# containers["features"].each do |container|
+#   Container.create(address: "#{container["attributes"]["Match_addr"]}", sector: "#{container["attributes"]["secteur"]}", latitude: "#{container["geometry"]["y"]}", longitude:"#{container["geometry"]["x"]}", material: "pile")
+# end
+
+puts "done containers!"
 
