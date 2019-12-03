@@ -18,7 +18,7 @@ const initScandit = () => {
       blurryRecognition: true,
       gpuAcceleration: true,
       enabledSymbologies: ["ean13"],
-      codeDuplicateFilter: 1000
+      codeDuplicateFilter: 4000
       });
       barcodePicker.applyScanSettings(scanSettings);
       // Note that enumeration variables for symbologies are recommended to be used instead (strings are used here for brevity)
@@ -44,7 +44,7 @@ const initScandit = () => {
               getElementById("scan-result-modal-placeholder").
               innerHTML = data.modal_html;
             $("#scan-result").modal();
-          })   
+          })
       });
     });
   }
