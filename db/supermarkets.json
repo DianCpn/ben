@@ -64,8 +64,8 @@
       "attributes": {
         "Name": "OFFICE DEPOT PARIS MAGENTA",
         "Match_addr": "60 boulevard de Magenta, 75010 Paris",
-        "secteur": "PARIS 10 ",
-        "horaires": "9h-19h3b0"
+        "secteur": "PARIS 10",
+        "horaires": "9h-19h30"
       },
       "geometry": {
         "x": 2.35867,
@@ -76,7 +76,7 @@
       "attributes": {
         "Name": "CARREFOUR CITY PARIS SAMPAIX",
         "Match_addr": "7 rue Lucien Sampaix, 75010 Paris",
-        "secteur": "PARIS 10 ",
+        "secteur": "PARIS 10",
         "horaires": ""
       },
       "geometry": {
@@ -88,7 +88,7 @@
       "attributes": {
         "Name": "REPORTAGE IMAGE",
         "Match_addr": "8 place Jacques Bonsergent, 75010 Paris",
-        "secteur": "PARIS 10 ",
+        "secteur": "PARIS 10",
         "horaires": ""
       },
       "geometry": {
@@ -100,7 +100,7 @@
       "attributes": {
         "Name": "REPORTAGE IMAGE",
         "Match_addr": "71 boulevard de Magenta, 75010 Paris",
-        "secteur": "PARIS 10 ",
+        "secteur": "PARIS 10",
         "horaires": ""
       },
       "geometry": {

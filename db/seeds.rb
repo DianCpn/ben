@@ -258,21 +258,21 @@ containers = JSON.parse(serialized_containers)
 
 
 containers["features"].each do |container|
-  Container.create(address: "#{container["attributes"]["Match_addr"]}", sector: "#{container["attributes"]["secteur"]}", latitude: "#{container["geometry"]["y"]}", longitude:"#{container["geometry"]["x"]}", material: "verre")
+  Container.create(name: "Conteneur de verre", address: "#{container["attributes"]["Match_addr"]}", sector: "#{container["attributes"]["secteur"]}", latitude: "#{container["geometry"]["y"]}", longitude:"#{container["geometry"]["x"]}", material: "verre")
 end
 
-# puts "creating pile containers"
+puts "creating pile containers"
 
-# filepath = File.join(Rails.root, 'db', 'supermarkets.json')
+filepath = File.join(Rails.root, 'db', 'supermarkets.json')
 
-# serialized_containers = File.read(filepath)
+serialized_containers = File.read(filepath)
 
-# containers = JSON.parse(serialized_containers)
+containers = JSON.parse(serialized_containers)
 
 
-# containers["features"].each do |container|
-#   Container.create(address: "#{container["attributes"]["Match_addr"]}", sector: "#{container["attributes"]["secteur"]}", latitude: "#{container["geometry"]["y"]}", longitude:"#{container["geometry"]["x"]}", material: "pile")
-# end
+containers["features"].each do |container|
+  Container.create(name: "#{container["attributes"]["Name"]}", address: "#{container["attributes"]["Match_addr"]}", sector: "#{container["attributes"]["secteur"]}", latitude: "#{container["geometry"]["y"]}", longitude:"#{container["geometry"]["x"]}", hours:"#{container["attributes"]["horaires"]}", material: "pile")
+end
 
 puts "done containers!"
 
