@@ -1,7 +1,7 @@
 class ContainersController < ApplicationController
   def index
     if params[:search]
-      @containers = Container.where(material: "#{params[:search]}")
+      @containers = Container.where("lower(material) LIKE lower(?)", "%#{params[:search]}%")
     else
       @containers = Container.all
     end
