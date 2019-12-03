@@ -9,7 +9,7 @@
     </div>
     <div class="add-favorites ml-3">
       <% @product.searches.each do |search| %>
-        <div class="favorite-btn" data-star="<%= search.id %>">
+        <div class="favorite-btn mt-1" data-star="<%= search.id %>">
           <%= render 'searches/yellow_star', search: search %>
         </div>
       <% end %>
