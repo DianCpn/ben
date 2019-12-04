@@ -20,11 +20,11 @@
     <% @product.product_packages.each do |item| %>
       <div class="sorting-card">
         <% if item.packaging.category == "verre" %>
-          <div class="green">
+          <div class="gray">
             <div class="category">
               <h3> <%= item.packaging.category.capitalize %></h3>
             <p><%= item.packaging.instruction %></p>
-            <p class="tip"><i class="fas fa-lightbulb", style="color: #6DC084">&nbsp;</i><%= item.packaging.tip %></p>
+            <p class="tip"><i class="fas fa-lightbulb", style="color: #B8B8B5">&nbsp;</i><%= item.packaging.tip %></p>
             </div>
               <div class="image-glass"><%= image_tag "GroupVerre.svg", class: "glass_bin" %></div>
             <div class=button-glass>
