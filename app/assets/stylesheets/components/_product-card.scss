@@ -96,13 +96,13 @@
   }
 }
 
-.green {
+.gray {
   margin-top: 30px;
   position: relative;
   width: 100%;
   .category {
     border-radius: 6px;
-    border: 4px solid #6DC084;
+    border: 4px solid $middle-light-gray;
     margin-left: 70px;
     padding: 10px 10px 10px 50px;
   }
