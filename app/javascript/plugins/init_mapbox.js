@@ -24,9 +24,12 @@ const addMarkersToMap = (map, markers) => {
     new mapboxgl.Marker(element)
       .setLngLat([ marker.lng, marker.lat ])
       .setPopup(popup)
-      .addTo(map);
+      .addTo(map)
+
   });
 };
+
+
 
 const fitMapToMarkers = (map, markers) => {
   const bounds = new mapboxgl.LngLatBounds();
@@ -38,6 +41,11 @@ const currentPosition = (map) => {
   navigator.geolocation.getCurrentPosition((data) => {
     const current = [{lat: data.coords.latitude, lng: data.coords.longitude}]
     fitMapToMarkers(map, current);
+    new mapboxgl.Marker()
+      .setLngLat([data.coords.longitude, data.coords.latitude])
+      .addTo(map);
+
+
   });
 }
 
