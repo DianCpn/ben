@@ -1,8 +1,7 @@
-
 h1{
   color: #535456;
   font-size: 30px;
-  margin: 35px 10px 35px 10px;
+  margin: 35px 0px;
 
 }
 
@@ -11,7 +10,7 @@ h1{
 }
 
 .card-favorite {
-  margin: 10px;
+  margin: 10px 0px;
   h2 {
     color: #535456;
     font-size: 26px;
@@ -33,13 +32,13 @@ h1{
 
 
 .favorite-title {
-display: flex;
-justify-content: space-between;
-padding-bottom: 0px;
-  a {
-    text-decoration: none;
-    color: #535456;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+    a {
+      text-decoration: none;
+      color: #535456;
+    }
 }
 
 .circle-jaune {
