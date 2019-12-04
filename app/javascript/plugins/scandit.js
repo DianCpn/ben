@@ -50,5 +50,7 @@ const initScandit = () => {
   }
 }
 
+
+
 export { initScandit }
 
