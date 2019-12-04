@@ -5,7 +5,7 @@ const initScandit = () => {
   if (barcodeTrigger) {
     ScanditSDK.configure(
       barcodeTrigger.dataset.apiKey,
-      {engineLocation: "https://cdn.jsdelivr.net/npm/scandit-sdk/build"}
+      {engineLocation: "https://unpkg.com/scandit-sdk@4.6.0/build"}
     )
 
     ScanditSDK.BarcodePicker.create(barcodeTrigger, {
