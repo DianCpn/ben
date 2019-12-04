@@ -23,7 +23,7 @@
   margin-bottom: 120px;
   h2 {
     color: #535456;
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 40px;
   }
 }
@@ -35,13 +35,13 @@
   display: flex;
 
     h3 {
-      font-size: 24px;
+      font-size: 26px;
       color: #535456;
       font-weight: normal;
     }
 
     p {
-      font-size: 14px;
+      font-size: 18px;
       margin-top: 10px;
       color: #535456;
     }
@@ -120,7 +120,7 @@
   }
   p {
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -130,6 +130,9 @@
   border-radius: 40px;
   padding: 10px;
   width: fit-content;
+  a{
+    font-size: 16px;
+  }
 }
 
 .image-glass {
