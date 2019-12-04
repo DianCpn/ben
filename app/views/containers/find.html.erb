@@ -2,7 +2,7 @@
   <h1>Que voulez vous trier ?</h1>
   <br>
   <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
-    <%= form_tag(find_tip_path, method: "get", class: "input-group") do %>
+    <%= form_tag(find_tip_path, method: "get", class: "input-group", remote: true) do %>
     <%= text_field_tag(:search, params[:search], placeholder: "Entrer un objet à trier", class: "form-control border-0 bg-light") %>
       <div class="input-group-append">
         <%#= submit_tag 'Rec', class: "btn btn-link text-success" do %>
@@ -11,8 +11,10 @@
         <%= button_tag(type: "submit", class: "btn btn-link text-success") do %>
           <%#= submit_tag 'Recherche', class: "btn btn-link text-success" %>
           <i class="fa fa-search"></i>
-          <% end %>
+        <% end %>
       </div>
-      <% end %>
-    </div>
+    <% end %>
+  </div>
+  <div class="search-results">
+  </div>
 </div>

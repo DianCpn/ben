@@ -29,5 +29,13 @@ class ContainersController < ApplicationController
   end
 
   def tip
+    if params[:search]
+      @search_results = params[:search]
+      respond_to do |format|
+        format.js { render partial: 'search-results'}
+      end
+    else
+      "No results"
+    end
   end
 end

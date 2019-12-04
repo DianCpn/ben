@@ -21,6 +21,11 @@
 
 .results-content {
   margin-bottom: 120px;
+  h2 {
+    color: #535456;
+    font-size: 24px;
+    margin-top: 40px;
+  }
 }
 
 .sorting-card {
@@ -101,6 +106,30 @@
     margin-left: 70px;
     padding: 10px 10px 10px 50px;
   }
+}
+
+.blue {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  .category {
+    border-radius: 6px;
+    border: 4px solid #3f96c1;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  p {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+.find-container-btn {
+  background: linear-gradient(105.8deg, #41BBDB 0%, #002E49 100%);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding: 10px;
+  width: fit-content;
 }
 
 .image-glass {
