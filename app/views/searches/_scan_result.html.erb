@@ -5,68 +5,22 @@
         <% @product.product_packages.each do |product_package| %>
             <% if product_package.packaging.category == "verre" %>
             <div class="modal-header border-0">
-              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button> -->
               <h4 class="modal-title"><i class="fas fa-circle", style="color: #B8B8B5"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
             </div>
             <div class="modal-body">
               <%= product_package.packaging.instruction %>
             </div>
-            <% elsif product_package.packaging.category == "verre" && "metal" %>
+            <% elsif product_package.packaging.category == "metal" || product_package.packaging.category == "carton" || product_package.packaging.category == "plastique" %>
               <div class="modal-header border-0">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button> -->
-                <h4 class="modal-title"><i class="fas fa-circle", style="color: #B8B8B5"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
                 <h4 class="modal-title"><i class="fas fa-circle", style="color: #FECB1D"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
               </div>
               <div class="modal-body">
                 <%= product_package.packaging.instruction %>
               </div>
-            <% elsif product_package.packaging.category == "plastique" && "carton" %>
-              <div class="modal-header border-0">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button> -->
-                <h4 class="modal-title"><i class="fas fa-circle", style="color: #FECB1D"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
-              </div>
-              <div class="modal-body">
-                <%= product_package.packaging.instruction %>
-              </div>
-            <% elsif product_package.packaging.category == "plastique" && "metal" %>
-              <div class="modal-header border-0">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button> -->
-                <h4 class="modal-title"><i class="fas fa-circle", style="color: #FECB1D"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
-              </div>
-              <div class="modal-body">
-                <%= product_package.packaging.instruction %>
-              </div>
-            <% elsif product_package.packaging.category == "metal" && "carton" %>
-              <div class="modal-header border-0">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button> -->
-                <h4 class="modal-title"><i class="fas fa-circle", style="color: #FECB1D"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
-              </div>
-              <div class="modal-body">
-                <%= product_package.packaging.instruction %>
-              </div>
-            <% else %>
-            <div class="modal-header border-0">
-              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button> -->
-              <h4 class="modal-title"><i class="fas fa-circle", style="color: #FECB1D"></i>&nbsp;&nbsp;&nbsp;<%= product_package.packaging.category.capitalize %></h4>
-            </div>
-            <div class="modal-body">
-              <%= product_package.packaging.instruction %>
-            </div>
             <% end %>
           <% end %>
         <div class="modal-footer border-0">
+          <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
           <%= link_to "> Voir plus", product_path(@product) %>
         </div>
       </div>
