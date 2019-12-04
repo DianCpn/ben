@@ -3,31 +3,22 @@
   <% @favorites.each do |favorite| %>
     <div class="card-favorite d-flex justify-content-between">
       <div class="favorite-text">
-        <% favorite.product.product_packages.each do |item| %>
-          <% if item.packaging.category == "verre" %>
-            <div class="verre">
-              <div class="favorite-title">
-                <h2><%= link_to "#{favorite.product.title}", product_path(favorite.product) %></h2>
-                <div class="favorite-btn" data-star="<%= favorite.id %>">
-                <%= render 'searches/yellow_star', search: favorite %>
-                </div>
-              </div>
-              <p><%= favorite.product.brand %></p>
-              <p><i class="fas fa-circle" style='color:#6DC084;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></p>
+        <div class="card-border card-border-<%= favorite.product.color_name %>">
+          <div class="favorite-title">
+            <h2><%= link_to "#{favorite.product.title}", product_path(favorite.product) %></h2>
+            <div class="favorite-btn" data-star="<%= favorite.id %>">
+              <%= render 'searches/yellow_star', search: favorite %>
             </div>
-          <% else %>
-            <div class="jaune">
-              <div class="favorite-title">
-                <h2><%= link_to "#{favorite.product.title}", product_path(favorite.product) %></h2>
-                <div class="favorite-btn" data-star="<%= favorite.id %>">
-                <%= render 'searches/yellow_star', search: favorite %>
-                </div>
-              </div>
-              <p><%= favorite.product.brand %></p>
-              <p><i class="fas fa-circle" style='color:#FECB1D;'></i> <%= item.packaging.category.capitalize %> : <%= item.packaging.instruction %></p>
-            </div>
+          </div>
+          <p><%= favorite.product.brand %></p>
+          <% favorite.product.product_packages.each do |product_package| %>
+            <p>
+              <i class="fas fa-circle circle-<%= product_package.color_name %>"></i>
+              <%= product_package.packaging.category.capitalize %> :
+              <%= product_package.packaging.instruction %>
+            </p>
           <% end %>
-        <% end %>
+        </div>
       </div>
     </div>
   <% end %>
