@@ -5,7 +5,7 @@ class Packaging < ApplicationRecord
     if category == "metal" || category == "carton" || category == "plastique"
       "jaune"
     else
-      "vert"
+      "gray"
     end
   end
 end
