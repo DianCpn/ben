@@ -30,7 +30,7 @@
     <%= stylesheet_pack_tag 'application', media: 'all' %>
   </head>
   <body>
-    <div class="sticky-footer">
+    <div class="sticky-footer <%= current_page?(root_path) ? "without-margin-bottom" : "" %> ">
     <%#= render 'shared/navbar' %>
       <%= render 'shared/flashes' %>
       <%= yield %>
