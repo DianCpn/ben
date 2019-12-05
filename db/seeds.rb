@@ -29,7 +29,7 @@ Container.destroy_all
 puts "seeding packaging ..."
 carton = Packaging.create(category: "carton", instruction: "À recycler dans la poubelle JAUNE", tip: "Les barquettes en carton se recyclent et se trient même souillées.")
 plastique = Packaging.create(category: "plastique", instruction: "À recycler dans la poubelle JAUNE", tip: "Les bouteilles en plastique doivent être aplaties dans leur longueur")
-metal = Packaging.create(category: "métal", instruction: "À recycler dans la poubelle JAUNE", tip: "Avec 9 boîtes de conserve recyclées, on fabrique 1 boule de pétanque")
+metal = Packaging.create(category: "metal", instruction: "À recycler dans la poubelle JAUNE", tip: "Avec 9 boîtes de conserve recyclées, on fabrique 1 boule de pétanque")
 verre = Packaging.create(category: "verre", instruction: "À recycler dans la poubelle BLANCHE", tip: "Tous les pots et bocaux en verre se recyclent et se trient bien vidés sans leur couvercle.")
 puts "packaging seeded!"
 
