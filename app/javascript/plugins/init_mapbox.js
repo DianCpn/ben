@@ -44,8 +44,6 @@ const currentPosition = (map) => {
     new mapboxgl.Marker()
       .setLngLat([data.coords.longitude, data.coords.latitude])
       .addTo(map);
-
-
   });
 }
 
