@@ -98,14 +98,74 @@
     },
     {
       "attributes": {
-        "Name": "REPORTAGE IMAGE",
-        "Match_addr": "71 boulevard de Magenta, 75010 Paris",
-        "secteur": "PARIS 10",
+        "Name": "UNIVERSITE PARIS 1",
+        "Match_addr": "31 rue Baudricourt, 75013 Paris",
+        "secteur": "PARIS 13",
+        "horaires": "7h30-21h00"
+      },
+      "geometry": {
+        "x": 2.36456,
+        "y": 48.8277
+      }
+    },
+    {
+      "attributes": {
+        "Name": "MONOPRIX PARIS CHOISY",
+        "Match_addr": "63 avenue de Choisy, 75013 Paris",
+        "secteur": "PARIS 13",
+        "horaires": "09:00 - 20:45"
+      },
+      "geometry": {
+        "x": 2.36208,
+        "y": 48.8232
+      }
+    },
+    {
+      "attributes": {
+        "Name": "MONOPRIX ITALIE",
+        "Match_addr": "83 avenue d'Italie, 75013 Paris",
+        "secteur": "PARIS 13",
+        "horaires": "09h-21h45"
+      },
+      "geometry": {
+        "x": 2.35832,
+        "y": 48.8244
+      }
+    },
+    {
+      "attributes": {
+        "Name": "ENTENDRE LAFORTUNE",
+        "Match_addr": "101 avenue d'Italie, 75013 Paris",
+        "secteur": "PARIS 13",
         "horaires": ""
       },
       "geometry": {
-        "x": 2.35676,
-        "y": 48.8752
+        "x": 2.35849,
+        "y": 48.8232
+      }
+    },
+    {
+      "attributes": {
+        "Name": "G20 PARIS CAILLAUX",
+        "Match_addr": "16 Rue Caillaux, 75013 Paris",
+        "secteur": "PARIS 13",
+        "horaires": ""
+      },
+      "geometry": {
+        "x": 2.36032,
+        "y": 48.8225
+      }
+    },
+    {
+      "attributes": {
+        "Name": "OFFICE DEPOT PARIS ITALIE",
+        "Match_addr": "92 avenue d'Italie, 75013 Paris",
+        "secteur": "PARIS 13",
+        "horaires": ""
+      },
+      "geometry": {
+        "x": 2.35715,
+        "y": 48.8256
       }
     }
   ]
