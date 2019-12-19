@@ -978,6 +978,1128 @@
         "x": 2.3735582764011083,
         "y": 48.85879445416569
       }
+    },
+
+      "attributes": {
+        "OBJECTID": 323,
+        "Match_addr": "30 AV GOBELINS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3521046871087616,
+        "y": 48.835987601111029
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 324,
+        "Match_addr": "1 BD ARAGO",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3515623010193365,
+        "y": 48.836488200842851
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 325,
+        "Match_addr": "2 BD ARAGO",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.350659096890432,
+        "y": 48.836618900500362
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 326,
+        "Match_addr": "35 BD PORT ROYAL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3472435618388738,
+        "y": 48.837091897122562
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 327,
+        "Match_addr": "50 BD AUGUSTE BLANQUI",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3497775012798927,
+        "y": 48.829932443667587
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 328,
+        "Match_addr": "124 BD AUGUSTE BLANQUI",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3423365400976257,
+        "y": 48.83181300233904
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 329,
+        "Match_addr": "5 PL PAUL VERLAINE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3524819594739972,
+        "y": 48.827429515206532
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 330,
+        "Match_addr": "178 RUE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3514226190470811,
+        "y": 48.82597025387048
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 331,
+        "Match_addr": "81 RUE BOBILLOT",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3502347341914054,
+        "y": 48.825496297220297
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 332,
+        "Match_addr": "1 RUE AUGUSTE LANCON",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3464297951284743,
+        "y": 48.824551150687945
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 333,
+        "Match_addr": "105 RUE BOBILLOT",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3485977477944742,
+        "y": 48.823887214278678
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 334,
+        "Match_addr": "4 PL RUNGIS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.347255406313232,
+        "y": 48.822500937800072
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 335,
+        "Match_addr": "1 RUE VERGNIAUD",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3459387934390086,
+        "y": 48.829979679070696
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 336,
+        "Match_addr": "53 RUE AMIRAL MOUCHEZ",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3420314452346087,
+        "y": 48.8224864830295
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 337,
+        "Match_addr": "100 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3572744319855929,
+        "y": 48.825226698135623
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 338,
+        "Match_addr": "13 RUE BAUDRICOURT",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3649396726467002,
+        "y": 48.82809586833099
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 339,
+        "Match_addr": "57 AV CHOISY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3624021028802074,
+        "y": 48.822772815202455
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 340,
+        "Match_addr": "1 AV CHOISY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3643277306014205,
+        "y": 48.8202448263539
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 341,
+        "Match_addr": "151 AV CHOISY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.358459342538354,
+        "y": 48.82775918332041
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 342,
+        "Match_addr": "1 AV CHOISY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3643277306014205,
+        "y": 48.8202448263539
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 343,
+        "Match_addr": "47 RUE CHATEAU RENTIERS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3697185648232559,
+        "y": 48.82497274595849
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 344,
+        "Match_addr": "3 PL ALPES",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3582455407016654,
+        "y": 48.831998708090737
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 345,
+        "Match_addr": "135 RUE JEANNE ARC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3603061893614958,
+        "y": 48.835672362670394
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 346,
+        "Match_addr": "19 PL JEANNE ARC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3686130267836432,
+        "y": 48.829181683817389
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 347,
+        "Match_addr": "79 RUE CHEVALERET",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3759966957126948,
+        "y": 48.829028295927614
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 348,
+        "Match_addr": "153 RUE CHEVALERET",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3711210516080414,
+        "y": 48.832503498549826
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 349,
+        "Match_addr": "80 RUE AMIRAL MOUCHEZ",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3428259057575493,
+        "y": 48.82100486089616
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 350,
+        "Match_addr": "1 RUE THOMIRE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3483843260878037,
+        "y": 48.819861510027209
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 351,
+        "Match_addr": "1 RUE SANTE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.34213862437635,
+        "y": 48.838058031224762
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 352,
+        "Match_addr": "14 RUE BOBILLOT",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3538454166865148,
+        "y": 48.829692986426366
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 353,
+        "Match_addr": "156 RUE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3541110336145601,
+        "y": 48.826115975286598
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 354,
+        "Match_addr": "13 AV SOEUR ROSALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3530483722198245,
+        "y": 48.831913907956398
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 355,
+        "Match_addr": "23 BD AUGUSTE BLANQUI",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3531354363392576,
+        "y": 48.830300714591175
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 356,
+        "Match_addr": "1 RUE CORDELIERES",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3487462827692691,
+        "y": 48.835507196233969
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 357,
+        "Match_addr": "17 BD PORT ROYAL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3491060716769594,
+        "y": 48.836879773387466
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 358,
+        "Match_addr": "67 BD SAINT MARCEL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3542250718343056,
+        "y": 48.837335384111711
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 359,
+        "Match_addr": "63 AV GOBELINS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3541342048428513,
+        "y": 48.833965214737731
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 360,
+        "Match_addr": "134 BD VINCENT AURIOL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3612154565313062,
+        "y": 48.83288646052614
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 361,
+        "Match_addr": "59 BD VINCENT AURIOL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3692606946732524,
+        "y": 48.835114380572364
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 362,
+        "Match_addr": "46 RUE JEANNE ARC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3673374567460743,
+        "y": 48.830696018003536
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 363,
+        "Match_addr": "41 RUE PATAY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3745291214812427,
+        "y": 48.825340467167223
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 364,
+        "Match_addr": "92 RUE JEANNE ARC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3641762483601991,
+        "y": 48.833111326660116
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 365,
+        "Match_addr": "190 RUE NATIONALE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3625052902983525,
+        "y": 48.832631795773956
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 366,
+        "Match_addr": "0 S RUE REGNAULT",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3794668916908015,
+        "y": 48.82548632040421
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 367,
+        "Match_addr": "95 RUE BAUDRICOURT",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3621746142592839,
+        "y": 48.823963577846648
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 368,
+        "Match_addr": "1 AV CHOISY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3643277306014205,
+        "y": 48.8202448263539
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 369,
+        "Match_addr": "15 AV LEON BOLLEE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3632610872557578,
+        "y": 48.818064494665038
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 370,
+        "Match_addr": "2 SQ ROSNY AINE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3587319104247011,
+        "y": 48.817426660461194
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 371,
+        "Match_addr": "6 BD MASSENA",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3761881360295227,
+        "y": 48.824081017184483
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 372,
+        "Match_addr": "1 AV JOSEPH BEDIER",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3737617963421771,
+        "y": 48.820479145671378
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 373,
+        "Match_addr": "9 AV CHOISY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3640343495921403,
+        "y": 48.820617772334522
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 374,
+        "Match_addr": "20 AV IVRY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3671228432825897,
+        "y": 48.822796888152759
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 375,
+        "Match_addr": "1 QU IVRY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.388299608683973,
+        "y": 48.825179415511485
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 376,
+        "Match_addr": "101 RUE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3652997630191397,
+        "y": 48.826693827333038
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 377,
+        "Match_addr": "30 RUE PROVIDENCE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3467345480129018,
+        "y": 48.826381964726792
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 378,
+        "Match_addr": "37 RUE WURTZ",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3434366833428708,
+        "y": 48.825240396604784
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 379,
+        "Match_addr": "1 RUE VERGNIAUD",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3459387934390086,
+        "y": 48.829979679070696
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 380,
+        "Match_addr": "1 RUE BERBIER METS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3512108332731865,
+        "y": 48.833331982994856
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 381,
+        "Match_addr": "89 BD AUGUSTE BLANQUI",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3467311078260402,
+        "y": 48.82989969235183
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 382,
+        "Match_addr": "127 RUE GLACIERE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3420810445632543,
+        "y": 48.826754471236846
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 383,
+        "Match_addr": "1 RUE AMIRAL MOUCHEZ",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3418027533893571,
+        "y": 48.826132951158961
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 384,
+        "Match_addr": "1 RUE VERGNIAUD",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3459387934390086,
+        "y": 48.829979679070696
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 385,
+        "Match_addr": "10 RUE DOCTEUR LERAY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3544118524038442,
+        "y": 48.823457385776329
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 386,
+        "Match_addr": "1 RUE DOCTEUR TUFFIER",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3550812262897569,
+        "y": 48.822051137861884
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 387,
+        "Match_addr": "105 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3586304251575338,
+        "y": 48.822738592543715
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 388,
+        "Match_addr": "131 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3590988134506023,
+        "y": 48.821401496001819
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 389,
+        "Match_addr": "72 RUE JEANNE ARC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3653747525366384,
+        "y": 48.832210379429831
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 390,
+        "Match_addr": "52 AV IVRY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3649916105158657,
+        "y": 48.823861245205535
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 391,
+        "Match_addr": "1 PL PORT PRINCE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3661547180313236,
+        "y": 48.819318032473156
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 392,
+        "Match_addr": "1 RUE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3764657284120725,
+        "y": 48.830272305450862
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 393,
+        "Match_addr": "1 RUE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3764657284120725,
+        "y": 48.830272305450862
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 394,
+        "Match_addr": "194 RUE CHATEAU RENTIERS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3614554643684422,
+        "y": 48.830902060355946
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 395,
+        "Match_addr": "1 RUE JEANNE ARC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3696540831600394,
+        "y": 48.828680391014302
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 396,
+        "Match_addr": "1 BD VINCENT AURIOL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3737010494646618,
+        "y": 48.837133850186454
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 397,
+        "Match_addr": "13 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3565170915261491,
+        "y": 48.829516992031188
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 398,
+        "Match_addr": "87 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3584336285102627,
+        "y": 48.824030590543273
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 399,
+        "Match_addr": "1 RUE BRILLAT SAVARIN",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3522151872497798,
+        "y": 48.821523273513748
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 400,
+        "Match_addr": "1 RUE CLISSON",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3696142502886848,
+        "y": 48.833162592102738
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 401,
+        "Match_addr": "1 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3562364941801497,
+        "y": 48.830410074966508
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 402,
+        "Match_addr": "1 AV PORTE VITRY",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.378723755324029,
+        "y": 48.821368192540653
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 403,
+        "Match_addr": "1 RUE CHATEAU RENTIERS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3713323301793339,
+        "y": 48.822578846623216
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 404,
+        "Match_addr": "66 RUE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3680047793654699,
+        "y": 48.827388026383353
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 405,
+        "Match_addr": "18 RUE NEUVE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3784042409108306,
+        "y": 48.831709450902622
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 406,
+        "Match_addr": "1 QU FRANCOIS MAURIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3793574456826434,
+        "y": 48.832292374874292
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 407,
+        "Match_addr": "1 RUE FULTON",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3722346866037602,
+        "y": 48.838507537786469
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 408,
+        "Match_addr": "1 RUE BERBIER METS",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3512108332731865,
+        "y": 48.833331982994856
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 409,
+        "Match_addr": "54 BD ARAGO",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3444034437672943,
+        "y": 48.835123123258363
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 410,
+        "Match_addr": "65 BD AUGUSTE BLANQUI",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3491533439118828,
+        "y": 48.829239633204828
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 411,
+        "Match_addr": "69 BD ARAGO",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3422225400944217,
+        "y": 48.8346490489837
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 412,
+        "Match_addr": "130 BD HOPITAL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3572432470022018,
+        "y": 48.834281577608515
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 413,
+        "Match_addr": "30 BD SAINT MARCEL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.358972457059032,
+        "y": 48.8392653879406
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 414,
+        "Match_addr": "137 BD HOPITAL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3583753655681585,
+        "y": 48.834882890440198
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 415,
+        "Match_addr": "1 RUE GLACIERE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3455759948402206,
+        "y": 48.837303119568254
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 416,
+        "Match_addr": "8 RUE JACQUES DESTREE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3548985320159037,
+        "y": 48.816823112975634
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 417,
+        "Match_addr": "166 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3585016268751198,
+        "y": 48.821277252637522
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 418,
+        "Match_addr": "63 RUE NATIONALE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.366919575805376,
+        "y": 48.825917009479852
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 419,
+        "Match_addr": "47 AV ITALIE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3572482866383586,
+        "y": 48.827180952053688
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 420,
+        "Match_addr": "1 BD KELLERMANN",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3586685914028016,
+        "y": 48.818840034364605
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 421,
+        "Match_addr": "65 QU GARE",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3751234756932678,
+        "y": 48.835701741016543
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 422,
+        "Match_addr": "100 BD HOPITAL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3587427092121578,
+        "y": 48.836296720822546
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 423,
+        "Match_addr": "1 RUE TOLBIAC",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3764657284120725,
+        "y": 48.830272305450862
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 424,
+        "Match_addr": "1 BD VINCENT AURIOL",
+        "secteur": "PARIS 13 "
+      },
+      "geometry": {
+        "x": 2.3737010494646618,
+        "y": 48.837133850186454
+      }
     }
   ]
 }
